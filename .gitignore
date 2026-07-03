@@ -1,0 +1,30 @@
+# Drupal
+
+# Ignore vendor directory (installed by Composer)
+vendor/
+
+# Ignore user-uploaded files
+sites/*/files/
+sites/*/private/
+
+# Ignore local settings (contains DB credentials)
+sites/*/settings.php
+sites/*/settings.local.php
+sites/*/services.yml
+
+# Ignore local development configs
+sites/development.services.yml
+
+# Ignore OS / editor artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore Composer cache
+.composer/
+
+# Ignore Drush site aliases
+drush/sites/
