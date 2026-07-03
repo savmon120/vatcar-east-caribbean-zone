@@ -1,6 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/vagcruis/curacao-rebuild.sazacmedia.uk/
-    - /bin/rsync -av --exclude='.git' --exclude='.cpanel.yml' --exclude='sites/default/settings.php' --exclude='sites/default/files/' . $DEPLOYPATH
-    - cd $DEPLOYPATH && /usr/local/bin/composer install --no-dev --optimize-autoloader
+    - /usr/local/bin/composer install --no-dev --optimize-autoloader
