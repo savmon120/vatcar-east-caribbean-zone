@@ -1,0 +1,19 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger cPanel Git pull and deploy
+        run: |
+          curl -u "vagcruis:${{ secrets.CPANEL_API_TOKEN }}" \
+            "https://curacao-rebuild.sazacmedia.uk:2083/execute/VersionControl/update" \
+            --data "repository=/home/vagcruis/curacao-rebuild.sazacmedia.uk" \
+            --fail \
+            --silent \
+            --show-error
