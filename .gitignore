@@ -22,15 +22,11 @@ drush/sites/
 # -----------------------------------------------
 # DDEV local environment
 # -----------------------------------------------
-# Keep .ddev/config.yaml in git but ignore local overrides and generated files
-.ddev/.gitignore
-.ddev/db_snapshots/
-.ddev/addon-metadata/
-.ddev/homeadditions/
-.ddev/providers/
-.ddev/commands/web/
-.ddev/commands/db/
-.ddev/xhprof/
+# Ignore everything in .ddev/ except config.yaml — DDEV regenerates everything
+# else on `ddev start`. The generated .ddev/.gitignore is also excluded here so
+# DDEV can manage it freely without git noise.
+.ddev/*
+!.ddev/config.yaml
 
 # -----------------------------------------------
 # OS / editor artifacts
