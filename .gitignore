@@ -1,21 +1,40 @@
-# Drupal
+# Drupal 11
 
 # Ignore vendor directory (installed by Composer)
-vendor/
+/vendor/
 
-# Ignore user-uploaded files
-sites/*/files/
-sites/*/private/
+# Ignore user-uploaded files and private files
+sites/*/files
+sites/*/private
+
+# Ignore multi-site test environment
+sites/simpletest
 
 # Ignore local settings (contains DB credentials)
-sites/*/settings.php
-sites/*/settings.local.php
-sites/*/services.yml
+sites/*/*settings*.php
+!sites/*/default.settings.php
+sites/*/*services*.yml
+!sites/*/default.services.yml
 
-# Ignore local development configs
-sites/development.services.yml
+# Ignore Drush site aliases
+drush/sites/
 
-# Ignore OS / editor artifacts
+# -----------------------------------------------
+# DDEV local environment
+# -----------------------------------------------
+# Keep .ddev/config.yaml in git but ignore local overrides and generated files
+.ddev/.gitignore
+.ddev/db_snapshots/
+.ddev/addon-metadata/
+.ddev/homeadditions/
+.ddev/providers/
+.ddev/commands/web/
+.ddev/commands/db/
+.ddev/xhprof/
+
+# -----------------------------------------------
+# OS / editor artifacts
+# -----------------------------------------------
 .DS_Store
 Thumbs.db
 .idea/
@@ -23,8 +42,10 @@ Thumbs.db
 *.swp
 *.swo
 
-# Ignore Composer cache
-.composer/
+# Windows Zone Identifier files (created when downloading on Windows)
+*:Zone.Identifier
 
-# Ignore Drush site aliases
-drush/sites/
+# -----------------------------------------------
+# Composer
+# -----------------------------------------------
+.composer/
