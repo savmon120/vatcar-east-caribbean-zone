@@ -2,5 +2,8 @@
 deployment:
   tasks:
     - /usr/local/bin/composer install --no-dev --optimize-autoloader
+    - chmod 644 sites/default/settings.php
+    - sed -i "s|sites/default/files/config_[^']*|config/sync|" sites/default/settings.php
+    - chmod 444 sites/default/settings.php
     - vendor/bin/drush --yes config:import
     - vendor/bin/drush --yes cache:rebuild
