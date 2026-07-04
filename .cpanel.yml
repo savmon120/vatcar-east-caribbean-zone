@@ -2,3 +2,5 @@
 deployment:
   tasks:
     - /usr/local/bin/composer install --no-dev --optimize-autoloader
+    - vendor/bin/drush --yes config:import
+    - vendor/bin/drush --yes cache:rebuild

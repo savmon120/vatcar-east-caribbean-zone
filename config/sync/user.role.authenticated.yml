@@ -1,0 +1,20 @@
+uuid: 47ac8d6a-07c9-49a6-adba-6264f19afe6a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: NIdXIuy50QW5gU-_FT12WB2kl-dperteQ4Q02YHgRG4
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format basic_html'
+  - 'view media'

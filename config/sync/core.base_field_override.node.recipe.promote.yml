@@ -1,0 +1,24 @@
+uuid: 5b9705fb-963b-4b6c-8332-da19a5ad191b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.recipe
+_core:
+  default_config_hash: FmK0AhETThsUmMzGVCs2Rnpgjwr-MV2meli4Xdexxdc
+id: node.recipe.promote
+field_name: promote
+entity_type: node
+bundle: recipe
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: LBaNHR2iSQWenwxlXmCU37WJ_f9sEOC6XocWNx_9JOU
+session:
+  parameter: language
+url:
+  source: path_prefix
+  prefixes:
+    en: en
+    es: es
+    en-gb: ''
+  domains:
+    en: ''
+    es: ''
+    en-gb: ''
+selected_langcode: site_default
