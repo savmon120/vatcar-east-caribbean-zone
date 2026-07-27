@@ -1,0 +1,29 @@
+uuid: 5d8f69da-1950-43b7-aa5a-895ba403832a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_category
+    - node.type.wiki_article
+    - node.type.wiki_dashboard_card
+id: node.wiki_article.field_parent_category
+field_name: field_parent_category
+entity_type: node
+bundle: wiki_article
+label: 'Parent Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      wiki_dashboard_card: wiki_dashboard_card
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

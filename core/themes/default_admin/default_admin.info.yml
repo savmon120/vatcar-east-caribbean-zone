@@ -4,7 +4,7 @@ base theme: false
 description: A clean, accessible and powerful Drupal administration theme with a strong focus on improving the editorial experience.
 alt text: Screenshot of Default Admin, the Drupal administration theme.
 package: Core
-# version: VERSION
+version: VERSION
 lifecycle: experimental
 
 libraries:
@@ -200,8 +200,3 @@ regions:
   sidebar_first: First sidebar
 regions_hidden:
   - sidebar_first
-
-# Information added by Drupal.org packaging script on 2026-07-01
-version: '11.4.0'
-project: 'drupal'
-datestamp: 1782918946

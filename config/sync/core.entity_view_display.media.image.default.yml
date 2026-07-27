@@ -5,9 +5,8 @@ dependencies:
   config:
     - field.field.media.image.field_media_image
     - media.type.image
-    - responsive_image.styles.3_2_image
   module:
-    - responsive_image
+    - svg_image
 _core:
   default_config_hash: OZvMyDzMzTRzhE51ShKIJyODrpNg4I9AVIEq-y9lmR4
 id: media.image.default
@@ -16,13 +15,17 @@ bundle: image
 mode: default
 content:
   field_media_image:
-    type: responsive_image
+    type: image
     label: visually_hidden
     settings:
-      responsive_image_style: 3_2_image
       image_link: ''
+      image_style: ''
       image_loading:
         attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
     weight: 1
     region: content

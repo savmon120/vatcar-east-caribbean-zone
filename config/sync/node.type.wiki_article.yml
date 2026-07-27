@@ -1,0 +1,18 @@
+uuid: 9dd4de3f-c53a-44d5-901a-6b5ef2f07e02
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Wiki Article'
+type: wiki_article
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -7,7 +7,10 @@ dependencies:
     - field.field.node.page.field_body
     - field.field.node.page.layout_builder__layout
     - node.type.page
+  content:
+    - 'block_content:basic:4887341a-f34b-454f-b0ac-9a9a424821d5'
   module:
+    - block_content
     - layout_builder
     - layout_discovery
     - text
@@ -17,6 +20,25 @@ third_party_settings:
     enabled: true
     allow_custom: true
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Homepage Feature Label'
+          context_mapping: {  }
+        components:
+          20adabf1-1289-4075-bc9b-4d04563512ed:
+            uuid: 20adabf1-1289-4075-bc9b-4d04563512ed
+            region: content
+            configuration:
+              id: 'block_content:4887341a-f34b-454f-b0ac-9a9a424821d5'
+              label: 'Homepage Features Bar'
+              label_display: '0'
+              provider: block_content
+              context_mapping: {  }
+              view_mode: full
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:

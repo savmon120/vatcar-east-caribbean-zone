@@ -1,0 +1,110 @@
+.view-wiki-main-page {
+
+    .view-content {
+        background-color: #ffffff !important;
+        width: 100%;
+        max-width: 1355px;
+        margin: 0 auto;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .wiki-card {
+        background-color: #ffffff !important;
+        border-radius: 10px;
+        width: 300px;
+        min-height: 410px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: inset 0 0 5px 0 black, 6px 6px 4px -3px black, 0 6px 4px -3px black;
+        box-shadow: inset 0 0 5px 0 black, 6px 6px 4px -3px black, 0 6px 4px -3px black;
+        user-select: none;
+        position: relative;
+
+        .views-field-title a::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .wiki-card-img {
+            img {
+                width: 100% !important;
+                height: 220px !important;
+                object-fit: cover !important;
+                border-radius: 8px;
+            }
+        }
+
+        img {
+            width: 100% !important;
+            height: 220px !important;
+            object-fit: cover !important;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+
+    .views-field-title {
+        font-size: clamp(1.0rem, 1.3vw, 1.4rem);
+        font-weight: bold;
+        padding: 5px 0.5em 0 0.5em;
+        text-align: center;
+
+        a {
+            color: #0548A3;
+            text-decoration: none;
+        }
+    }
+
+    .views-field-field-body {
+        font-size: 1.0rem;
+        padding: 0 0.5em 0 2em;
+        height: 175px;
+
+        .field-content {
+            p {
+                margin: 0;
+            }
+
+            br {
+                display: none;
+            }
+        }
+
+        a {
+            position: relative;
+            z-index: 2;
+            display: block;
+            break-inside: avoid;
+            page-break-inside: avoid;
+            text-decoration: none;
+            color: #0548A3;
+            padding: 2px 0;
+            line-height: 1.15;
+            transition: all 0.2s ease;
+
+            &:hover {
+                color: #003366;
+            }
+        }
+    }
+
+    .wiki-card-split .views-field-field-body .field-content,
+    .split-columns {
+        column-count: 2;
+        column-gap: 15px;
+    }
+
+    .views-field-field-media-image {
+        margin-top: auto;
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+    }
+}

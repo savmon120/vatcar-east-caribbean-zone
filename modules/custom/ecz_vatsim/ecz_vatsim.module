@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function ecz_vatsim_page_attachments(array &$attachments) {
+    $config = \Drupal::config('ecz_vatsim.settings');
+
+    $attachments['#attached']['drupalSettings']['eczVatsim'] = [
+        'feedUrl' => $config->get('feed_url') ?: 'https://data.vatsim.net/v3/vatsim-data.json',
+        'bookingsUrl' => $config->get('bookings_url') ?: '',
+        'prefixes' => $config->get('prefixes') ?: 'TNCA, TNCB, TNCC, TNCM, TQPF, TNCS, TNCE, TNCF, TBPB, TFFF, TFFR, TAPA, TGPY, TVSA, TLPL, TDPD, TKPK, TTPP',
+        'refreshRate' => $config->get('refresh_rate') ?: 60,
+    ];
+}

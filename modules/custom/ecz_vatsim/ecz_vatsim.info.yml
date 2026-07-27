@@ -1,0 +1,6 @@
+name: 'ECZ VATSIM'
+type: module
+description: 'Manage VATSIM API settings and prefixes from the Admin UI.'
+core_version_requirement: ^10 || ^11
+package: Custom
+configure: ecz_vatsim.settings

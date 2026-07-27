@@ -1,0 +1,22 @@
+uuid: e7130006-dbd6-4f3c-8695-4379c241e7ea
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - east_caribbean
+_core:
+  default_config_hash: z9q7zG_CSRBsbEE_2osiq8EaWsA2lB75yZblDG4rowM
+id: east_caribbean_breadcrumbs
+theme: east_caribbean
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

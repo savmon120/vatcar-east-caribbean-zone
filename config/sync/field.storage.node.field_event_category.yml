@@ -1,0 +1,33 @@
+uuid: d7d250d1-7e96-4771-973d-600ac75321b2
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_category
+field_name: field_event_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: training
+      label: Training
+    -
+      value: exam
+      label: Exam
+    -
+      value: featured
+      label: Featured
+    -
+      value: group_flight
+      label: 'Group Flight'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

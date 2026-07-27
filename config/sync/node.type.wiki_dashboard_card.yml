@@ -1,0 +1,18 @@
+uuid: 7f94114d-98a3-4259-892d-4ad869eca3ed
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Wiki Category'
+type: wiki_dashboard_card
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

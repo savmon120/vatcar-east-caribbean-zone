@@ -1,0 +1,27 @@
+name: east_caribbean
+description: "east_caribbean theme based on <a href='https://www.drupal.org/project/radix' target='_blank'>Radix 6.x</a> and Bootstrap 5.x"
+screenshot: screenshot.png
+'alt text': 'east_caribbean theme screenshot'
+core_version_requirement: ^11
+engine: twig
+type: theme
+'base theme': radix
+'interface translation project': east_caribbean
+'interface translation server pattern': themes/custom/east_caribbean/translations/%language.po
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - east_caribbean/style
+  - east_caribbean/live_operations
+ckeditor5-stylesheets:
+  - build/css/main.style.css
+version: 6.0.8
+project: radix
+datestamp: 1781864350
+generator: 'radix_starterkit:6.0.8'

@@ -1,0 +1,95 @@
+uuid: 83200c8e-c3d8-498b-8fd7-254a8cfd8dc9
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - system
+id: wiki_grid_styling
+label: 'Wiki Grid Styling'
+code: |-
+  /* Create the Grid spacing */
+  .view-wiki-main-page .view-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+  }
+
+  /* The actual Card container */
+  .wiki-card {
+      background-color: #f8f9fa;
+      border: 1px solid #d1d9e6;
+      border-radius: 10px;
+      width: 250px;
+      min-height: 280px;
+      padding: 20px 15px;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+  }
+
+  /* The Blue Title at the top */
+  .wiki-card .views-field-title {
+      color: #004494;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 2;
+  }
+
+  /* The Links/Description in the middle */
+  .wiki-card .views-field-body {
+      color: #0055a5;
+      font-size: 0.9rem;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+  }
+
+  /* OVERRIDE OLIVERO: Fix the line-height for <br> tags */
+  .wiki-card .views-field-body p {
+      margin: 0;
+      line-height: 1.0 !important;
+  }
+
+  /* Remove bullets and padding if you used a list */
+  .wiki-card .views-field-body ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .wiki-card .views-field-body li {
+      margin: 0 0 5px 0;
+  }
+
+  /* The Icon pinned to the bottom right */
+  .wiki-card .views-field-field-card-icon {
+      position: absolute !important;
+      bottom: -10px !important;
+      right: -10px !important;
+      width: 150px;
+      opacity: 0.25;
+      z-index: 1;
+      pointer-events: none;
+  }
+
+  .wiki-card .views-field-field-card-icon img {
+      width: 100%;
+      height: auto;
+      margin: 0 !important;
+  }
+media: all
+preprocess: true
+conditions:
+  current_theme:
+    id: current_theme
+    negate: false
+    theme: olivero
+contexts: {  }
+conditions_require_all: true

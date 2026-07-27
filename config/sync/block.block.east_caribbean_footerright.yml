@@ -1,0 +1,23 @@
+uuid: e0d6e8c4-7128-446d-9bb8-bdef75edd211
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2c50ee57-efa5-4be9-8567-affc83dab082'
+  module:
+    - block_content
+  theme:
+    - east_caribbean
+id: east_caribbean_footerright
+theme: east_caribbean
+region: footer
+weight: -2
+provider: null
+plugin: 'block_content:2c50ee57-efa5-4be9-8567-affc83dab082'
+settings:
+  id: 'block_content:2c50ee57-efa5-4be9-8567-affc83dab082'
+  label: 'Footer Right'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

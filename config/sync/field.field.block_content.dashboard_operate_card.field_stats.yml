@@ -1,0 +1,24 @@
+uuid: df893e78-3713-454b-9403-e58f69dadd9e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.dashboard_operate_card
+    - field.storage.block_content.field_stats
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.dashboard_operate_card.field_stats
+field_name: field_stats
+entity_type: block_content
+bundle: dashboard_operate_card
+label: Stats
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

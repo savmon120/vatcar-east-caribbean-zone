@@ -1,0 +1,61 @@
+uuid: 256d12ec-3cb2-4265-ba05-9f552820b83d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.wiki_article.field_body
+    - field.field.node.wiki_article.field_parent_category
+    - field.field.node.wiki_article.layout_builder__layout
+    - node.type.wiki_article
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          adaee60b-272e-43e0-a604-0c608c3ebb25:
+            uuid: adaee60b-272e-43e0-a604-0c608c3ebb25
+            region: content
+            configuration:
+              id: 'extra_field_block:node:wiki_article:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          0fc4753c-8562-459e-9c4f-554feb2184cd:
+            uuid: 0fc4753c-8562-459e-9c4f-554feb2184cd
+            region: content
+            configuration:
+              id: 'field_block:node:wiki_article:field_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.wiki_article.full
+targetEntityType: node
+bundle: wiki_article
+mode: full
+content: {  }
+hidden:
+  field_body: true
+  field_parent_category: true
+  langcode: true
+  layout_builder__layout: true
+  links: true

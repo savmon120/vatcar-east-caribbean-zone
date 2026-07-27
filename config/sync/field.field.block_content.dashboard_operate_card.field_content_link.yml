@@ -1,0 +1,23 @@
+uuid: 96c23c38-8fe9-4d00-9d11-e16c3b668c20
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.dashboard_operate_card
+    - field.storage.block_content.field_content_link
+  module:
+    - link
+id: block_content.dashboard_operate_card.field_content_link
+field_name: field_content_link
+entity_type: block_content
+bundle: dashboard_operate_card
+label: 'Button Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

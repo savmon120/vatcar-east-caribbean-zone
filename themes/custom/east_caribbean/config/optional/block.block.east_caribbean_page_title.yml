@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - east_caribbean
+id: east_caribbean_page_title
+theme: east_caribbean
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: "Page title"
+  label_display: "0"
+  provider: core
+visibility: {}

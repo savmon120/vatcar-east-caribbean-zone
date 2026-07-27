@@ -1,0 +1,39 @@
+uuid: 751df381-c0a2-4cb5-b066-c3353779a7d1
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_category
+field_name: field_category
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: announcement
+      label: Announcement
+    -
+      value: update
+      label: Update
+    -
+      value: event
+      label: Event
+    -
+      value: notam
+      label: NOTAM
+    -
+      value: operations
+      label: Operations
+    -
+      value: bulletin
+      label: Bulletin
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,35 @@
+uuid: 7291e961-978d-40a7-aeab-d3f727a0c8a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.uncropped
+    - field.field.media.document.field_media_document
+    - media.type.document
+  module:
+    - file
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: fsmCtf08IYrs9KYJo5RUJK_KvfsDYjzAPjbT4pWpZ7g
+id: media.document.uncropped
+targetEntityType: media
+bundle: document
+mode: uncropped
+content:
+  field_media_document:
+    type: file_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

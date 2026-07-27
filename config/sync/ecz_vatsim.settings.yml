@@ -1,0 +1,4 @@
+feed_url: 'https://data.vatsim.net/v3/vatsim-data.json'
+bookings_url: ''
+prefixes: 'TNCA, TNCB, TNCC, TNCM, TQPF, TNCS, TNCE, TNCF, TAPA, TBPB, TFFF, TFFR, TGPY, TVSA, TLPL, TDPD, TKPK, TTPP'
+refresh_rate: '60'

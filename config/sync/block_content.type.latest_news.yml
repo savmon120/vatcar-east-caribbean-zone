@@ -1,0 +1,8 @@
+uuid: 9b7dcc25-b683-4308-a5d0-673a9824481c
+langcode: en-gb
+status: true
+dependencies: {  }
+id: latest_news
+label: 'Latest News'
+revision: false
+description: null

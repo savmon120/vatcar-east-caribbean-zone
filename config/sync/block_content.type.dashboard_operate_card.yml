@@ -1,0 +1,8 @@
+uuid: f25673ff-7634-4f5a-bfe0-92327e388c62
+langcode: en-gb
+status: true
+dependencies: {  }
+id: dashboard_operate_card
+label: 'Dashboard Operate Card'
+revision: false
+description: null

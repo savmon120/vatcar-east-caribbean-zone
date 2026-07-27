@@ -1,0 +1,14 @@
+style:
+  css:
+    theme:
+      build/css/main.style.css: {}
+  js:
+    build/js/main.script.js: {}
+  dependencies:
+    - core/drupal
+
+live_operations:
+  js:
+    js/live-operations.js: {}
+  dependencies:
+    - core/drupal

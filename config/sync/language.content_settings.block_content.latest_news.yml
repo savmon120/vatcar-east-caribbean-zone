@@ -1,0 +1,11 @@
+uuid: da38b86d-2eb8-404b-8083-56f91309bbea
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.latest_news
+id: block_content.latest_news
+target_entity_type_id: block_content
+target_bundle: latest_news
+default_langcode: site_default
+language_alterable: false

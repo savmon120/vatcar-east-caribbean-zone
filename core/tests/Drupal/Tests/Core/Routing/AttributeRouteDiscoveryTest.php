@@ -9,6 +9,7 @@ use Drupal\Core\Routing\RouteBuildEvent;
 use Drupal\Core\Routing\RouteCompiler;
 use Drupal\router_test\Controller\TestAttributes;
 use Drupal\router_test\Controller\TestClassAttribute;
+use Drupal\router_test\Controller\TestClassAttributeClassOnly;
 use Drupal\Tests\UnitTestCase;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Group;
@@ -40,6 +41,26 @@ class AttributeRouteDiscoveryTest extends UnitTestCase {
     $discovery = new AttributeRouteDiscovery($namespaces);
     $discovery->onRouteBuild($event);
     $this->routeCollection = $event->getRouteCollection();
+  }
+
+  /**
+   * @legacy-covers ::onRouteBuild
+   */
+  public function testOnRouteBuildWithArrayNamespaceDirectories(): void {
+    $event = new RouteBuildEvent(new RouteCollection());
+    $namespaces = new \ArrayObject([
+      'Drupal\router_test' => [
+        $this->root . '/core/modules/system/tests/modules/router_test_directory/missing',
+        $this->root . '/core/modules/system/tests/modules/router_test_directory/src',
+      ],
+    ]);
+    $discovery = new AttributeRouteDiscovery($namespaces);
+    $discovery->onRouteBuild($event);
+
+    $route = $event->getRouteCollection()->get('router_test.method_attribute');
+    $this->assertNotNull($route);
+    $this->assertSame('/test_method_attribute', $route->getPath());
+    $this->assertSame(TestAttributes::class . '::attributeMethod', $route->getDefault('_controller'));
   }
 
   /**
@@ -103,6 +124,19 @@ class AttributeRouteDiscoveryTest extends UnitTestCase {
 
     // Auto-generated class::method alias.
     $this->assertSame($route, $this->routeCollection->get(TestAttributes::class . '::allProperties'));
+  }
+
+  /**
+   * Tests that class-only #[Route] registers a route for invokable controllers.
+   */
+  public function testClassOnlyRouteWithInvoke(): void {
+    $route = $this->routeCollection->get('router_test.class_only');
+    $this->assertNotNull($route);
+    $this->assertSame('/test_class_attribute_class_only', $route->getPath());
+    $this->assertSame(TestClassAttributeClassOnly::class, $route->getDefault('_controller'));
+    $this->assertSame('TRUE', $route->getRequirement('_access'));
+    // Aliases for invokable controllers must also be registered.
+    $this->assertSame($route, $this->routeCollection->get(TestClassAttributeClassOnly::class . '::__invoke'));
   }
 
   /**

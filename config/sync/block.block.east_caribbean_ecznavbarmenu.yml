@@ -1,0 +1,25 @@
+uuid: a1dd629a-0188-46ba-98ad-f21c18e55470
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.ecz-navbar-menu
+  module:
+    - system
+  theme:
+    - east_caribbean
+id: east_caribbean_ecznavbarmenu
+theme: east_caribbean
+region: navbar_right
+weight: 0
+provider: null
+plugin: 'system_menu_block:ecz-navbar-menu'
+settings:
+  id: 'system_menu_block:ecz-navbar-menu'
+  label: 'ECZ Navbar Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,117 @@
+.live-operations-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+
+    .view-header {
+        grid-column: 1 / -1;
+        font-size: 1.05rem;
+        font-weight: 800;
+        color: #1a1a1a;
+        text-transform: uppercase;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pulse-indicator {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #d32f2f;
+            letter-spacing: 0.5px;
+            animation: pulse-red 2s infinite;
+        }
+    }
+
+    .ops-section {
+        margin-bottom: 0;
+
+        .ops-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #777777;
+            text-transform: uppercase;
+            border-bottom: 1px solid #f1f3f5;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .ops-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            border: 1px solid #e2e6ea;
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 0.85rem;
+
+            .ops-controller-info {
+                display: flex;
+                flex-direction: column;
+                gap: 1px;
+
+                .ops-station {
+                    font-weight: 800;
+                    color: #0548A3;
+                    font-size: 0.9rem;
+                }
+
+                .ops-name {
+                    font-weight: 500;
+                    color: #666666;
+                    font-size: 0.75rem;
+                }
+            }
+
+            .ops-freq {
+                font-weight: 700;
+                color: #333333;
+                background-color: #e9ecef;
+                padding: 3px 8px;
+                border-radius: 4px;
+                font-family: monospace;
+                font-size: 0.8rem;
+            }
+        }
+
+        .ops-loading, .ops-empty, .ops-error {
+            background-color: transparent;
+            border: none;
+            justify-content: center;
+            color: #777777;
+            font-style: italic;
+            padding: 10px 0;
+        }
+
+        .ops-error {
+            color: #d32f2f;
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes pulse-red {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}

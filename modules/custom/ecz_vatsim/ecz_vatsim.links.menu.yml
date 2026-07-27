@@ -1,0 +1,6 @@
+ecz_vatsim.settings:
+  title: 'VATSIM Integration'
+  description: 'Configure VATSIM endpoints, intervals, and FIR prefixes.'
+  parent: system.admin_config_services
+  route_name: ecz_vatsim.settings
+  weight: 50

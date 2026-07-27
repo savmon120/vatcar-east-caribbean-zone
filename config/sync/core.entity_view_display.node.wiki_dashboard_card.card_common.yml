@@ -1,0 +1,35 @@
+uuid: df1a2641-889d-4b75-8223-fbc739854914
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_common
+    - field.field.node.wiki_dashboard_card.field_body
+    - field.field.node.wiki_dashboard_card.field_media_image
+    - field.field.node.wiki_dashboard_card.field_weight
+    - node.type.wiki_dashboard_card
+  module:
+    - user
+id: node.wiki_dashboard_card.card_common
+targetEntityType: node
+bundle: wiki_dashboard_card
+mode: card_common
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_weight: true
+  langcode: true

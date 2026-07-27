@@ -1,0 +1,11 @@
+uuid: 8ba56cc2-c683-41ea-8e66-0bad9addcff8
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.featured_airport
+id: node.featured_airport
+target_entity_type_id: node
+target_bundle: featured_airport
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 36f27ec1-ea07-4732-ba31-ae6885c61937
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+id: block_content.hero_banner
+target_entity_type_id: block_content
+target_bundle: hero_banner
+default_langcode: site_default
+language_alterable: false

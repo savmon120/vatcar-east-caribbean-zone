@@ -1,0 +1,11 @@
+uuid: cb72d29f-1e76-4658-ba2b-fadf478b816a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - media
+id: media.uncropped
+label: Uncropped
+description: null
+targetEntityType: media
+cache: true

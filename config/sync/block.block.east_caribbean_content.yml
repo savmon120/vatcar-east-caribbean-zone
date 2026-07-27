@@ -1,0 +1,22 @@
+uuid: 0325acd5-d551-44d4-86af-d11cbcf96a83
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - east_caribbean
+_core:
+  default_config_hash: Tnr3o526gJyJkfMDupjpJUswYIpr760UFjojrGEBbWs
+id: east_caribbean_content
+theme: east_caribbean
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 4afabdda-1388-4a6d-8ec7-15f192c9c46f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_airport_name
+    - node.type.featured_airport
+id: node.featured_airport.field_airport_name
+field_name: field_airport_name
+entity_type: node
+bundle: featured_airport
+label: 'Airport Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+body.node-type--wiki-article {
+    .layout__region--content {
+        .field--name-field-body {
+            .media.media--type-image {
+                width: 100% !important;
+                max-width: 100% !important;
+                display: block !important;
+                margin: 40px 0 !important;
+
+                img {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    height: auto !important;
+                    object-fit: contain !important;
+                }
+            }
+        }
+    }
+}

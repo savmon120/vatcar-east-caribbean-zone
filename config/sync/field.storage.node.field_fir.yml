@@ -1,0 +1,20 @@
+uuid: 5b9a1a8d-8a36-46b4-ae77-efac377d1f20
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_fir
+field_name: field_fir
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

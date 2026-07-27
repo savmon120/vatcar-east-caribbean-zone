@@ -1,8 +1,8 @@
 _core:
   default_config_hash: CE6mp0IUq9iWxJDj4MR0oorToG2KJmsXHHnbstTFxys
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: core/profiles/demo_umami/themes/umami/favicon.ico
+  mimetype: image/jpeg
+  path: 'public://48x48_0.jpg'
   url: ''
   use_default: false
 features:
@@ -11,6 +11,6 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: ''
+  path: 'public://48x48.jpg'
   url: null
-  use_default: true
+  use_default: false

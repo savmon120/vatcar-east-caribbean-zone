@@ -1,0 +1,19 @@
+uuid: 28eb8dec-536e-4e3b-be13-ee45cad9fc8f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_fir
+    - node.type.event
+id: node.event.field_location_fir
+field_name: field_location_fir
+entity_type: node
+bundle: event
+label: Location/FIR
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,122 @@
+html,
+body,
+.dialog-off-canvas-main-canvas {
+    height: 100%;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main,
+.page__main,
+#main-content {
+    flex: 1 0 auto;
+}
+
+footer.page__footer {
+    position: relative;
+    background-color: #f3f6fa;
+    margin-top: 5dvh;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+
+    .block--east-caribbean-footerwave {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+
+        img {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+            max-width: none !important;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+    }
+
+    .block--east-caribbean-footerleft {
+        .field--name-field-body {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+
+            img {
+                border-radius: 50%;
+            }
+
+            p {
+                margin-bottom: 0;
+                white-space: nowrap;
+                color: #000000;
+            }
+        }
+    }
+
+    .block--system-menu {
+        .block__content > ul.nav {
+            display: flex !important;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 1.1em;
+
+            li.nav-item {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child)::after {
+                    content: "•";
+                    margin-left: 15px;
+                    color: #000000;
+                    font-size: 1.2rem;
+                }
+
+                .nav-link {
+                    text-decoration: none !important;
+                    color: #000000 !important;
+                    padding: 0 !important;
+
+                    &:hover {
+                        color: #0548A3 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .block--east-caribbean-footerright {
+        .field--name-field-body {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 15px;
+
+            .media {
+                display: block !important;
+                margin: 0 !important;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

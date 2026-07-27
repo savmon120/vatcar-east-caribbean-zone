@@ -1,0 +1,28 @@
+main .container {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    @media (min-width: 992px) {
+        width: 95% !important;
+        max-width: 1500px !important;
+    }
+}
+
+.view-header {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pulse-indicator {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: #d32f2f;
+        letter-spacing: 0.5px;
+        animation: pulse-red 2s infinite;
+    }
+}

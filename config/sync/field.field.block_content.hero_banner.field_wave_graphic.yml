@@ -1,0 +1,29 @@
+uuid: 07e4baac-e6a7-4cd7-8d6c-fdf64b8142e3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - field.storage.block_content.field_wave_graphic
+    - media.type.image
+id: block_content.hero_banner.field_wave_graphic
+field_name: field_wave_graphic
+entity_type: block_content
+bundle: hero_banner
+label: wave_graphic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

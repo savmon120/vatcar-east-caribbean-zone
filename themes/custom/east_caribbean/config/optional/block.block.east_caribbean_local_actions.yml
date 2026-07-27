@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - east_caribbean
+id: east_caribbean_local_actions
+theme: east_caribbean
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: "Primary admin actions"
+  label_display: "0"
+  provider: core
+visibility: {}

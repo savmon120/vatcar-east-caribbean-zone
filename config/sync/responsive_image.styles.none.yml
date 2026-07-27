@@ -1,0 +1,9 @@
+uuid: 565755ba-ab85-4ebd-bd72-b9baef21ce70
+langcode: en-gb
+status: true
+dependencies: {  }
+id: none
+label: None
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: '_original image_'

@@ -1,0 +1,174 @@
+.block-views-blockupcoming-events-block-1 {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px 12px 12px 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    margin-bottom: 15px;
+    min-height: 155px;
+
+    .view-upcoming-events {
+        .view-content {
+            background-color: transparent;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    }
+
+    .block__title, .view-header {
+        font-size: 1.05rem;
+        font-weight: 800;
+        color: #1a1a1a;
+        text-transform: uppercase;
+        margin: 0 0 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+
+            &:hover {
+                color: #4fb2b2;
+            }
+        }
+    }
+
+    .views-row {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 15px 20px;
+        display: grid;
+
+        grid-template-columns: 65px 1fr auto;
+        grid-template-areas:
+            "date title    category"
+            "date body     category"
+            "date meta     category";
+
+        align-items: center;
+        column-gap: 15px;
+        row-gap: 4px;
+    }
+
+    .views-field-field-event-date {
+        grid-area: date;
+        text-align: center;
+        border-right: 1px solid #e0e0e0;
+        padding-right: 15px;
+        font-weight: 800;
+        line-height: 1.1;
+        color: #1a1a1a;
+        font-size: 1.4rem;
+
+        time, .field-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .views-field-title {
+        grid-area: title;
+        text-align: left;
+        align-self: end;
+
+        a {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-decoration: none;
+
+            &:hover {
+                color: #4fb2b2;
+            }
+        }
+    }
+
+    .views-field-field-body {
+        grid-area: body;
+        text-align: left;
+        font-size: 0.85rem;
+        color: #555555;
+        margin: 0;
+
+        &:empty { display: none; }
+    }
+
+    .views-field-nothing {
+        grid-area: meta;
+        text-align: left;
+        align-self: center;
+
+        .event-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #777777;
+
+            .event-time {
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .event-loc {
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .views-field-field-event-category {
+        grid-area: category;
+        justify-self: end;
+
+        .field-content {
+            display: inline-block;
+            padding: 4px 10px;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #333333;
+            background-color: #f8f9fa;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .view-footer {
+        margin-top: 15px;
+
+        a {
+            display: block;
+            background-color: #f1f3f5;
+            color: #1a1a1a;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: #e2e6ea;
+                color: #000000;
+            }
+        }
+    }
+}

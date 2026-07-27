@@ -1,0 +1,23 @@
+uuid: 569ed4ca-c232-4ac0-8474-b6248f47ea4a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.wiki_dashboard_card
+id: node.wiki_dashboard_card.field_weight
+field_name: field_weight
+entity_type: node
+bundle: wiki_dashboard_card
+label: Weight
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

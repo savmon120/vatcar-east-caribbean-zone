@@ -1,0 +1,8 @@
+uuid: aad54f4c-c877-4940-ac09-bbe171eccf54
+langcode: en-gb
+status: true
+dependencies: {  }
+id: hero_banner
+label: 'Hero Banner'
+revision: false
+description: null

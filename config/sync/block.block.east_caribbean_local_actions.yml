@@ -1,0 +1,20 @@
+uuid: 68b00b02-5984-4bd3-9aeb-61c7f294e5e2
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - east_caribbean
+_core:
+  default_config_hash: WoyXjLihenGwMJL2Vhwq9FlP1BlwKHji47faLfZSM1A
+id: east_caribbean_local_actions
+theme: east_caribbean
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

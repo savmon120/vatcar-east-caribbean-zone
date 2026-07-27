@@ -1,0 +1,55 @@
+uuid: 791d0dab-a628-4041-80cd-40240debc69f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.dashboard_operate_card
+    - field.field.block_content.dashboard_operate_card.field_body
+    - field.field.block_content.dashboard_operate_card.field_content_link
+    - field.field.block_content.dashboard_operate_card.field_media_image
+    - field.field.block_content.dashboard_operate_card.field_stats
+  module:
+    - link
+    - text
+id: block_content.dashboard_operate_card.default
+targetEntityType: block_content
+bundle: dashboard_operate_card
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_content_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: scale_crop_7_3_large
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_stats:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true

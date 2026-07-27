@@ -1,0 +1,7 @@
+ecz_vatsim.settings:
+  path: '/admin/config/services/vatsim'
+  defaults:
+    _form: '\Drupal\ecz_vatsim\Form\VatsimSettingsForm'
+    _title: 'VATSIM Settings'
+  requirements:
+    _permission: 'administer site configuration'

@@ -1,0 +1,23 @@
+uuid: 29b0acd5-1370-484e-a1c8-a21cc147c4ff
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4df12ec1-0d76-4864-ab65-3b523770eb23'
+  module:
+    - block_content
+  theme:
+    - east_caribbean
+id: east_caribbean_footerwave
+theme: east_caribbean
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:4df12ec1-0d76-4864-ab65-3b523770eb23'
+settings:
+  id: 'block_content:4df12ec1-0d76-4864-ab65-3b523770eb23'
+  label: 'Footer Wave'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

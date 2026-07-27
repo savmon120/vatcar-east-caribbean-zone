@@ -1,0 +1,29 @@
+uuid: 95558392-9aa2-4250-94ef-31110b556f5b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fir
+    - node.type.featured_airport
+    - taxonomy.vocabulary.fir
+id: node.featured_airport.field_fir
+field_name: field_fir
+entity_type: node
+bundle: featured_airport
+label: FIR
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fir: fir
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

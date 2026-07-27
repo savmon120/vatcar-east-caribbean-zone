@@ -1,0 +1,8 @@
+uuid: 05b2380f-8e59-40b3-8f51-f3036d03aebe
+langcode: en-gb
+status: true
+dependencies: {  }
+id: ecz-navbar-menu
+label: 'ECZ Navbar Menu'
+description: ''
+locked: false
