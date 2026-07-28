@@ -12381,6 +12381,182 @@ body.path-wiki .view-content {
   font-weight: 700;
   font-size: 1.3rem;
 }
+.airspace-directory {
+  padding: 1rem 0 3rem;
+}
+.airspace-directory .fir-heading {
+  color: #0a1b2a;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.airspace-directory .airspace-section {
+  margin-bottom: 5rem;
+}
+.airspace-directory .airspace-description {
+  font-size: 1.05rem;
+  color: #444444;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+.airspace-directory .airspace-description p {
+  margin-bottom: 1rem;
+}
+.airspace-directory .airspace-description strong {
+  color: #0548A3;
+  font-weight: 600;
+  border-bottom: 2px dotted #0548A3;
+}
+.airspace-directory .airspace-visuals {
+  align-items: flex-start;
+}
+.airspace-directory .airspace-maps img {
+  width: 100%;
+}
+.airspace-directory .airspace-maps img:last-child {
+  margin-bottom: 0 !important;
+}
+.airspace-directory .airspace-fl {
+  display: flex;
+  justify-content: center;
+}
+.airspace-directory .airspace-fl .fl-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+}
+.airspace-directory .airspace-fl .fl-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+.view-staff-directory {
+  padding: 2rem 0;
+}
+.view-staff-directory h2.fir-heading,
+.view-staff-directory .fir-heading.h2 {
+  color: #0a1b2a;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto 30px auto;
+}
+.view-staff-directory .view-content {
+  display: grid;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .view-staff-directory .view-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .view-staff-directory .view-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.view-staff-directory .views-row {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    -webkit-transform 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+.view-staff-directory .views-row:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.view-staff-directory .staff-card__img-wrapper {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background-color: #f1f3f5;
+}
+.view-staff-directory .staff-card__img-wrapper .media,
+.view-staff-directory .staff-card__img-wrapper .field,
+.view-staff-directory .staff-card__img-wrapper .field__item {
+  width: 100%;
+  height: 100%;
+}
+.view-staff-directory .staff-card__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+.view-staff-directory .staff-card__name {
+  color: #0a1b2a;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 15px 20px 5px;
+  text-align: center;
+}
+.view-staff-directory .staff-card__name a {
+  text-decoration: none;
+  color: inherit;
+}
+.view-staff-directory .staff-card__role {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 20px 15px;
+  text-align: center;
+}
+.view-staff-directory .staff-card__role a {
+  color: #0548A3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.view-staff-directory .staff-card__role a:hover {
+  color: #0a1b2a;
+}
+.view-staff-directory .staff-card__role[href] {
+  color: #0548A3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.view-staff-directory .staff-card__role[href]:hover {
+  color: #0a1b2a;
+}
+.view-staff-directory .staff-card__desc {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+.view-staff-directory .staff-card__desc p:last-child {
+  margin-bottom: 0;
+}
 .view-wiki-main-page .view-content {
   background-color: #ffffff !important;
   width: 100%;
@@ -13564,6 +13740,7 @@ nav.navbar .navbar-brand {
 }
 nav.navbar .navbar-brand span {
   color: #0a1b2a !important;
+  font-family: "Permanent Marker", cursive;
 }
 nav.navbar .navbar-brand img {
   margin-right: 12px;
