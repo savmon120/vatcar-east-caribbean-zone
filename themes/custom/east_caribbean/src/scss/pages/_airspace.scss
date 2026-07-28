@@ -1,0 +1,69 @@
+.airspace-directory {
+    padding: 1rem 0 3rem;
+
+    .fir-heading {
+        color: #0a1b2a;
+        font-weight: 700;
+        font-size: 1.8rem;
+        border-bottom: 2px solid #e9ecef;
+        padding-bottom: 10px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .airspace-section {
+        margin-bottom: 5rem;
+    }
+
+    .airspace-description {
+        font-size: 1.05rem;
+        color: #444444;
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            color: #0548A3;
+            font-weight: 600;
+            border-bottom: 2px dotted #0548A3;
+        }
+    }
+
+    .airspace-visuals {
+        align-items: flex-start;
+    }
+
+    .airspace-maps {
+        img {
+            width: 100%;
+        }
+
+        img:last-child {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .airspace-fl {
+        display: flex;
+        justify-content: center;
+
+        .fl-wrapper {
+            position: sticky;
+            top: 100px;
+            padding: 1.5rem;
+            background: #ffffff;
+            border-radius: 12px;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
