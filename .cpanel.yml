@@ -8,3 +8,7 @@ deployment:
     - vendor/bin/drush --yes updatedb
     - vendor/bin/drush --yes config:import
     - vendor/bin/drush --yes cache:rebuild
+    - chmod 444 sites/default/settings.php
+    - vendor/bin/drush --yes updatedb
+    - vendor/bin/drush --yes config:import
+    - vendor/bin/drush --yes cache:rebuild
