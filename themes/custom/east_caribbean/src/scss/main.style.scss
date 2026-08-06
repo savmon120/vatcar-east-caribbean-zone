@@ -1,19 +1,28 @@
 @import "init";
 @import "bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "base/drupal-overrides";
 @import "base/elements";
 @import "base/functions";
 @import "base/helpers";
 @import "base/typography";
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 @import "pages/home";
 @import "pages/wiki-main-page";
 @import "pages/airports_directory";
 @import "pages/airspace";
 @import "pages/staff";
+@import "pages/download";
+@import "pages/event";
+@import "pages/events-overview";
+@import "pages/news-overview";
+@import "pages/news-article";
+@import "pages/privacy-policy";
+@import "pages/controller-roster";
+
 @import "components/wiki-card";
 @import "components/wiki-category";
 @import "components/wiki-article";
@@ -24,7 +33,9 @@
 @import "components/latest-news";
 @import "components/live-flights";
 @import "components/featured_airports";
+
 @import "layout/layout";
 @import "layout/base";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/homepage-features";

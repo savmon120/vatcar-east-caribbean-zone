@@ -1,0 +1,78 @@
+.view-downloads {
+    padding: 2rem 0;
+
+    table.table {
+        width: 100%;
+        max-width: 1000px;
+        margin: 1.5rem auto;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: #ffffff;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+
+        thead {
+            background-color: #0a1b2a;
+            color: #ffffff;
+
+            th {
+                padding: 16px 24px;
+                font-weight: 700;
+                font-size: 0.95rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border: none;
+            }
+        }
+
+        tbody {
+            tr {
+                transition: background-color 0.2s ease;
+
+                &:nth-child(even) {
+                    background-color: #f8f9fa;
+                }
+
+                &:hover {
+                    background-color: #f1f3f5;
+                }
+
+                td {
+                    padding: 18px 24px;
+                    vertical-align: middle;
+                    color: #212529;
+                    font-size: 1.05rem;
+                    border-top: 1px solid #e9ecef;
+                }
+            }
+        }
+
+        th.views-field-field-media-document,
+        td.views-field-field-media-document {
+            text-align: right;
+            width: 1%;
+            white-space: nowrap;
+            border-left: none;
+        }
+    }
+
+    a.btn-download {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0548A3;
+        color: #ffffff !important;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 8px 20px;
+        border-radius: 6px;
+        text-decoration: none !important;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+
+        &:hover {
+            background-color: #0a1b2a;
+            transform: translateY(-2px);
+        }
+    }
+}

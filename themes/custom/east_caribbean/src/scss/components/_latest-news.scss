@@ -58,6 +58,15 @@
             transform: translateY(-2px);
         }
 
+        &:not(:has(img)) {
+            grid-template-columns: max-content 1fr;
+            grid-template-areas:
+                "type  date"
+                "title title"
+                "body  body";
+            padding: 15px;
+        }
+
         @media (max-width: 576px) {
             grid-template-columns: auto 1fr;
             grid-template-areas:
@@ -65,11 +74,23 @@
                 "type  date"
                 "title title"
                 "body  body";
+
+            &:not(:has(img)) {
+                grid-template-columns: max-content 1fr;
+                grid-template-areas:
+                    "type  date"
+                    "title title"
+                    "body  body";
+            }
         }
     }
 
     .views-field-field-news-image {
         grid-area: image;
+
+        &:not(:has(img)) {
+            display: none;
+        }
 
         img {
             width: 100%;
@@ -123,7 +144,8 @@
         }
     }
 
-    .views-field-field-body {
+    .views-field-field-body,
+    .views-field-field-description {
         grid-area: body;
         align-self: start;
         font-size: 0.85rem;

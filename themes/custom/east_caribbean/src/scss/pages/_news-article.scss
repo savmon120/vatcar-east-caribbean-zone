@@ -1,0 +1,97 @@
+.node--latest-news--full {
+    margin: 0 auto;
+    padding: 2rem 15px;
+
+    .block-field-blocknodelatest-newstitle,
+    h1.page-title {
+        margin-bottom: 1rem;
+
+        .block__content span,
+        h1, h2 {
+            display: block;
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: #0a1b2a;
+            line-height: 1.2;
+            margin: 0;
+        }
+    }
+
+    footer {
+        display: block;
+        margin-bottom: 1.5rem;
+
+        .author {
+            font-size: 0;
+            color: transparent;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1rem;
+
+            .user,
+            a {
+                display: none !important;
+            }
+
+            time {
+                font-size: 0.95rem;
+                font-weight: 600;
+                color: #64748b;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .field--name-field-news-image {
+        margin: 2rem 0;
+        text-align: center;
+
+        img {
+            max-height: 500px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .field--name-field-description,
+    .field--name-body {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #334155;
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        h2, h3 {
+            color: #0a1b2a;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        a {
+            color: #0548A3;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+
+            &:hover {
+                border-color: #0548A3;
+            }
+        }
+    }
+}

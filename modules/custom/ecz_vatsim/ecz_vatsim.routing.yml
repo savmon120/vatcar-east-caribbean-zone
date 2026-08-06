@@ -5,3 +5,11 @@ ecz_vatsim.settings:
     _title: 'VATSIM Settings'
   requirements:
     _permission: 'administer site configuration'
+
+ecz_vatsim.live_data:
+  path: '/api/vatsim/live'
+  defaults:
+    _controller: '\Drupal\ecz_vatsim\Controller\VatsimProxyController::getLiveData'
+    _title: 'VATSIM Live Data'
+  requirements:
+    _permission: 'access content'

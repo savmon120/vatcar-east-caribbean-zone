@@ -1,0 +1,17 @@
+.layout--fourcol-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(15px, 4vw, 45px) !important;
+    max-width: 1200px;
+    margin: -30px auto 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
+
+    .layout__region {
+        width: auto !important;
+        flex: 1 1 240px !important;
+        max-width: 280px;
+    }
+}

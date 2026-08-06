@@ -1,0 +1,57 @@
+body.node-type--page:not(.path-frontpage) {
+
+    .node--page--full {
+        background-color: #ffffff;
+
+        @media (max-width: 576px) {
+            padding: 25px 20px;
+        }
+
+        .block-field-blocknodepagetitle span,
+        h1.page-title {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #0a1b2a;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .field--name-field-body {
+            font-size: 1.1rem;
+            color: #334155;
+
+            h2, h3 {
+                color: #0a1b2a;
+                font-weight: 700;
+                margin-top: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin-bottom: 1.5rem;
+            }
+
+            ul, ol {
+                margin-bottom: 1.5rem;
+                padding-left: 1.5rem;
+
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            a {
+                color: #0548A3;
+                text-decoration: none;
+                font-weight: 600;
+                border-bottom: 1px solid transparent;
+                transition: border-color 0.2s ease;
+
+                &:hover {
+                    border-color: #0548A3;
+                }
+            }
+        }
+    }
+}

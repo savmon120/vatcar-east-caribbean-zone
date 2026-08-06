@@ -3,6 +3,7 @@ body,
 .dialog-off-canvas-main-canvas {
     height: 100%;
     margin: 0;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .page {
@@ -21,7 +22,7 @@ footer.page__footer {
     position: relative;
     background-color: #f3f6fa;
     margin-top: 5dvh;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     flex-shrink: 0;
 
     .block--east-caribbean-footerwave {
