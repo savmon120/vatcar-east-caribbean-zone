@@ -20,9 +20,7 @@
         color: #0a1b2a;
         font-weight: 700;
         font-size: 1.8rem;
-        border-bottom: 2px solid #e9ecef;
-        padding-bottom: 10px;
-        margin-top: 40px;
+        margin: 20px 0 0 0;
         text-transform: uppercase;
         letter-spacing: 1px;
 
@@ -43,7 +41,7 @@
         overflow: hidden;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.05);
+        border: 1px solid rgba(0,0,0,0.2);
         height: 280px;
         cursor: pointer;
 
@@ -70,7 +68,6 @@
             height: 100%;
         }
 
-        /* The magic trick stretching the image link over the entire card */
         a::after {
             content: "";
             position: absolute;

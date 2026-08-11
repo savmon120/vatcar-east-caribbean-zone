@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap";
 
 /* src/scss/main.style.scss */
 :root,
@@ -12234,34 +12234,6 @@ fieldset:disabled .btn {
 .draggable div.handle {
   box-sizing: content-box;
 }
-body.path-frontpage .page main {
-  padding-top: 0 !important;
-}
-body.path-frontpage .page__header {
-  display: none !important;
-}
-body.path-frontpage .layout--fourcol-section {
-  position: relative;
-  z-index: 5;
-  margin-top: -95px;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  gap: 100px;
-  flex-wrap: nowrap;
-}
-body.path-frontpage .layout--fourcol-section .layout__region {
-  flex: 1 1 0;
-}
-@media (max-width: 991px) {
-  body.path-frontpage .layout--fourcol-section {
-    flex-wrap: wrap;
-  }
-  body.path-frontpage .layout--fourcol-section .layout__region {
-    min-width: 45%;
-  }
-}
 body.path-wiki .view-content {
   justify-content: center;
 }
@@ -12289,9 +12261,7 @@ body.path-wiki .view-content {
   color: #0a1b2a;
   font-weight: 700;
   font-size: 1.8rem;
-  border-bottom: 2px solid #e9ecef;
-  padding-bottom: 10px;
-  margin-top: 40px;
+  margin: 20px 0 0 0;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -12316,7 +12286,7 @@ body.path-wiki .view-content {
     transform 0.3s ease,
     box-shadow 0.3s ease,
     -webkit-transform 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   height: 280px;
   cursor: pointer;
 }
@@ -12340,8 +12310,6 @@ body.path-wiki .view-content {
 .view-airports-directory .airport-card__img-wrapper .field__item {
   width: 100%;
   height: 100%;
-}
-.view-airports-directory .airport-card__img-wrapper {
 }
 .view-airports-directory .airport-card__img-wrapper a::after {
   content: "";
@@ -12382,81 +12350,13 @@ body.path-wiki .view-content {
   font-weight: 700;
   font-size: 1.3rem;
 }
-.airspace-directory {
-  padding: 1rem 0 3rem;
-}
-.airspace-directory .fir-heading {
-  color: #0a1b2a;
-  font-weight: 700;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #e9ecef;
-  padding-bottom: 10px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.airspace-directory .airspace-section {
-  margin-bottom: 5rem;
-}
-.airspace-directory .airspace-description {
-  font-size: 1.05rem;
-  color: #444444;
-  line-height: 1.7;
-  margin-bottom: 2.5rem;
-}
-.airspace-directory .airspace-description p {
-  margin-bottom: 1rem;
-}
-.airspace-directory .airspace-description strong {
-  color: #0548A3;
-  font-weight: 600;
-  border-bottom: 2px dotted #0548A3;
-}
-.airspace-directory .airspace-visuals {
-  align-items: flex-start;
-}
-.airspace-directory .airspace-maps img {
-  width: 100%;
-}
-.airspace-directory .airspace-maps img:last-child {
-  margin-bottom: 0 !important;
-}
-.airspace-directory .airspace-fl {
-  display: flex;
-  justify-content: center;
-}
-.airspace-directory .airspace-fl .fl-wrapper {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100px;
-  padding: 1.5rem;
-  background: #ffffff;
-  border-radius: 12px;
-  text-align: center;
-}
-.airspace-directory .airspace-fl .fl-wrapper img {
-  max-width: 100%;
-  height: auto;
-}
 .view-staff-directory {
   padding: 2rem 0;
-}
-.view-staff-directory h2.fir-heading,
-.view-staff-directory .fir-heading.h2 {
-  color: #0a1b2a;
-  font-weight: 700;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #e9ecef;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0 auto 30px auto;
 }
 .view-staff-directory .view-content {
   display: grid;
   gap: 3rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   grid-template-columns: repeat(1, 1fr);
 }
@@ -12483,7 +12383,7 @@ body.path-wiki .view-content {
     transform 0.3s ease,
     box-shadow 0.3s ease,
     -webkit-transform 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   height: 100%;
 }
 .view-staff-directory .views-row:hover {
@@ -12557,9 +12457,6 @@ body.path-wiki .view-content {
 }
 .view-staff-directory .staff-card__desc p:last-child {
   margin-bottom: 0;
-}
-.view-downloads {
-  padding: 2rem 0;
 }
 .view-downloads table.table {
   width: 100%;
@@ -12821,7 +12718,7 @@ body.path-wiki .view-content {
   }
 }
 .view-id-events .view-header {
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 .view-id-events .view-header h1,
 .view-id-events .view-header .h1 {
@@ -13251,12 +13148,7 @@ body.node-type--page:not(.path-frontpage) .node--page--full .field--name-field-b
 }
 .view-id-roster {
   margin: 0 auto;
-  max-width: 1300px;
-}
-.view-id-roster .view-header {
-  font-size: 2.5rem;
-  color: #0a1b2a;
-  text-transform: uppercase;
+  max-width: 1500px;
 }
 .view-id-roster .roster-legend {
   display: flex;
@@ -13271,6 +13163,7 @@ body.node-type--page:not(.path-frontpage) .node--page--full .field--name-field-b
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-left: auto;
 }
 .view-id-roster .roster-legend .legend-item {
   display: flex;
@@ -13313,22 +13206,22 @@ body.node-type--page:not(.path-frontpage) .node--page--full .field--name-field-b
 .view-id-roster thead th.views-field-title {
   text-align: left;
   padding-left: 20px;
-  width: 220px;
+  width: 20%;
 }
 .view-id-roster thead th.views-field-field-initials {
-  width: 80px;
+  width: 5%;
 }
 .view-id-roster thead th.views-field-field-cid {
-  width: 100px;
+  width: 15%;
 }
 .view-id-roster thead th.views-field-field-rating {
-  width: 80px;
+  width: 5%;
 }
 .view-id-roster thead th.views-field-field-roster-role {
-  width: 200px;
+  width: 20%;
 }
 .view-id-roster thead th.views-field-field-roster-fir {
-  width: 80px;
+  width: 10%;
 }
 .view-id-roster thead th.views-field-field-del-status,
 .view-id-roster thead th.views-field-field-gnd-status,
@@ -13336,6 +13229,7 @@ body.node-type--page:not(.path-frontpage) .node--page--full .field--name-field-b
 .view-id-roster thead th.views-field-field-app-status,
 .view-id-roster thead th.views-field-field-ctr-status {
   border-left: 1px solid #ffffff;
+  width: 5%;
 }
 .view-id-roster tbody tr {
   transition: background-color 0.2s ease;
@@ -13399,6 +13293,186 @@ body.node-type--page:not(.path-frontpage) .node--page--full .field--name-field-b
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+.custom-waitlist-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid #e2e8f0;
+  list-style: none;
+  padding-left: 0;
+  max-width: 1200px;
+  margin: 2rem auto 1.5rem auto;
+}
+.custom-waitlist-tabs li {
+  margin: 0;
+}
+.custom-waitlist-tabs li a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: #64748b;
+  text-decoration: none;
+  border-radius: 5px 5px 0 0;
+  background-color: #f1f5f9;
+  transition: all 0.2s ease;
+  border: none;
+}
+.custom-waitlist-tabs li a:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+.custom-waitlist-tabs li a.is-active,
+.custom-waitlist-tabs li a.active {
+  background-color: #3e8e8e;
+  color: #ffffff;
+}
+.view-id-training_waitlist {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+.view-id-training_waitlist table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.view-id-training_waitlist thead th {
+  background-color: #3e8e8e;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 15px 10px;
+  text-align: center;
+  border-style: none;
+}
+.view-id-training_waitlist thead th.views-field-counter {
+  width: 60px;
+}
+.view-id-training_waitlist thead th.views-field-title {
+  width: 25%;
+  text-align: left;
+}
+.view-id-training_waitlist thead th.views-field-field-cid {
+  width: 120px;
+}
+.view-id-training_waitlist thead th.views-field-field-type-of-training {
+  width: auto;
+}
+.view-id-training_waitlist thead th.views-field-field-date-of-request {
+  width: 180px;
+}
+.view-id-training_waitlist tbody tr {
+  transition: background-color 0.2s ease;
+}
+.view-id-training_waitlist tbody tr:hover {
+  background-color: #f8fafc;
+}
+.view-id-training_waitlist tbody td {
+  padding: 6px 10px;
+  color: #334155;
+  font-size: 0.95rem;
+  vertical-align: middle;
+  text-align: center;
+  height: 45px;
+  border: none;
+}
+.view-id-training_waitlist tbody td.views-field-title {
+  text-align: left;
+  font-weight: 600;
+}
+.view-id-training_waitlist .views-field-counter span,
+.view-id-training_waitlist .views-field-counter .field-content {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-color: #f1f5f9;
+  color: #3e8e8e;
+  font-weight: 800;
+  border-radius: 50%;
+  text-align: center;
+}
+.join-page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.join-page-wrapper .step-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px 15px 0;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+}
+.join-page-wrapper .step-card .step-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  color: #3e8e8e;
+  border: 2px solid #3e8e8e;
+  font-weight: 800;
+}
+.join-page-wrapper .step-card h4,
+.join-page-wrapper .step-card .h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #0a1b2a;
+}
+.join-page-wrapper .step-card p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: #334155;
+  line-height: 1.4;
+}
+.join-page-wrapper .faq-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #e2e8f0;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+.join-page-wrapper .faq-card h5,
+.join-page-wrapper .faq-card .h5 {
+  background-color: #3e8e8e;
+  color: #ffffff;
+  padding: 12px 15px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border-bottom: none;
+}
+.join-page-wrapper .faq-card p {
+  padding: 15px;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.5;
+}
+.join-page-wrapper .btn-join-apply {
+  background-color: #3e8e8e;
+  color: #ffffff !important;
+  border: 2px solid #3e8e8e;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.join-page-wrapper .btn-join-apply:hover {
+  background-color: #2c6666;
+  border-color: #2c6666;
+  color: #ffffff;
 }
 .view-wiki-main-page .view-content {
   background-color: #ffffff !important;
@@ -14545,15 +14619,30 @@ body.node-type--wiki-article .layout__region--content .field--name-field-body .m
     min-height: 200px;
   }
 }
-main .container {
-  width: 100% !important;
-  max-width: 100% !important;
+h1.page-title,
+.page-title.h1,
+.block-page-title-block h1,
+.block-page-title-block .h1,
+.view-header h1,
+.view-header .h1,
+.page__header h1,
+.page__header .h1 {
+  font-size: 2.5rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
-@media (min-width: 992px) {
-  main .container {
-    width: 95% !important;
-    max-width: 1500px !important;
-  }
+body.path-node h1.page-title,
+body.path-node .page-title.h1,
+body.path-node .block-page-title-block h1,
+body.path-node .block-page-title-block .h1,
+body.path-node .page__header h1,
+body.path-node .page__header .h1 {
+  margin-top: 0 !important;
 }
 .view-header {
   font-size: 1.05rem;
@@ -14573,8 +14662,24 @@ main .container {
   -webkit-animation: pulse-red 2s infinite;
   animation: pulse-red 2s infinite;
 }
-body .page main {
-  padding-top: 100px !important;
+* {
+  font-family: "DM Sans", sans-serif;
+}
+main .container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+@media (min-width: 992px) {
+  main .container {
+    width: 95% !important;
+    max-width: 1500px !important;
+  }
+}
+body.path-frontpage .page main {
+  padding-top: 0 !important;
+}
+body.path-frontpage .page__header {
+  display: none !important;
 }
 header,
 .site-header,
@@ -14721,7 +14826,6 @@ body,
 .dialog-off-canvas-main-canvas {
   height: 100%;
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
 }
 .page {
   display: flex;
@@ -14826,16 +14930,19 @@ footer.page__footer .block--east-caribbean-footerright .field--name-field-body .
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(15px, 4vw, 45px) !important;
-  max-width: 1200px;
-  margin: -30px auto 0 auto;
+  gap: clamp(20px, 3vw, 100px) !important;
+  margin: clamp(-90px, -6vw, -30px) auto 3rem auto;
   padding: 0 15px;
   position: relative;
   z-index: 10;
+  max-width: 1800px;
 }
 .layout--fourcol-section .layout__region {
-  width: auto !important;
-  flex: 1 1 240px !important;
-  max-width: 280px;
+  flex: 1 1 250px !important;
+  width: 100%;
+  max-width: clamp(250px, 13vw, 350px) !important;
+}
+.layout--fourcol-section .layout__region .d-flex {
+  justify-content: center;
 }
 /*# sourceMappingURL=main.style.css.map */

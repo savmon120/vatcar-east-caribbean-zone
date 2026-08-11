@@ -26,6 +26,7 @@
         "drupal/core-recommended": "^11.4",
         "drupal/core-vendor-hardening": "^11.4",
         "drupal/gin": "^5.0",
+        "drupal/metatag": "^2.2",
         "drupal/pathauto": "^1.15",
         "drupal/radix": "^6.0",
         "drupal/svg_image": "^3.2",

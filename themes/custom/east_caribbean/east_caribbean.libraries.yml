@@ -4,6 +4,7 @@ style:
       build/css/main.style.css: {}
   js:
     build/js/main.script.js: {}
+    js/waitlist.js: {}
   dependencies:
     - core/drupal
 

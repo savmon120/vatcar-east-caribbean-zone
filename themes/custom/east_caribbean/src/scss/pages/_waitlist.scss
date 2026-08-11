@@ -1,0 +1,107 @@
+.custom-waitlist-tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    list-style: none;
+    padding-left: 0;
+    max-width: 1200px;
+    margin: 2rem auto 1.5rem auto;
+
+    li {
+        margin: 0;
+    }
+
+    li a {
+        display: block;
+        padding: 10px 20px;
+        font-weight: 700;
+        color: #64748b;
+        text-decoration: none;
+        border-radius: 5px 5px 0 0;
+        background-color: #f1f5f9;
+        transition: all 0.2s ease;
+        border: none;
+
+        &:hover {
+            background-color: #e2e8f0;
+            color: #0f172a;
+        }
+
+        &.is-active, &.active {
+            background-color: #3e8e8e;
+            color: #ffffff;
+        }
+    }
+}
+
+.view-id-training_waitlist {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    thead {
+        th {
+            background-color: #3e8e8e;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            padding: 15px 10px;
+            text-align: center;
+            border-style: none;
+
+            &.views-field-counter { width: 60px; }
+            &.views-field-title { width: 25%; text-align: left; }
+            &.views-field-field-cid { width: 120px; }
+            &.views-field-field-type-of-training { width: auto; }
+            &.views-field-field-date-of-request { width: 180px; }
+        }
+    }
+
+    tbody {
+        tr {
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: #f8fafc;
+            }
+        }
+
+        td {
+            padding: 6px 10px;
+            color: #334155;
+            font-size: 0.95rem;
+            vertical-align: middle;
+            text-align: center;
+            height: 45px;
+            border: none;
+
+            &.views-field-title {
+                text-align: left;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .views-field-counter {
+        span, .field-content {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            background-color: #f1f5f9;
+            color: #3e8e8e;
+            font-weight: 800;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+}

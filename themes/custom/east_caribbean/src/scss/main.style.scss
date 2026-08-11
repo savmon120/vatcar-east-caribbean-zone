@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @import "base/drupal-overrides";
 @import "base/elements";
@@ -10,7 +10,6 @@
 @import "base/helpers";
 @import "base/typography";
 
-@import "pages/home";
 @import "pages/wiki-main-page";
 @import "pages/airports_directory";
 @import "pages/airspace";
@@ -22,6 +21,8 @@
 @import "pages/news-article";
 @import "pages/privacy-policy";
 @import "pages/controller-roster";
+@import "pages/waitlist";
+@import "pages/join-us";
 
 @import "components/wiki-card";
 @import "components/wiki-category";
