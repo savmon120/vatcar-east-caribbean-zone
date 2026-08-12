@@ -21,6 +21,92 @@ nav.navbar {
     padding-top: 15px;
     padding-bottom: 15px;
 
+    .vatsim-nav-item {
+        margin-left: auto;
+
+        .vatsim-login-btn {
+            background-color: #0a1b2a !important;
+            color: #ffffff !important;
+            border-radius: 50px;
+            padding: 10px 28px !important;
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+                color: #ffffff !important;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
+        }
+
+        .vatsim-user-btn {
+            background-color: #0a1b2a !important;
+            color: #ffffff !important;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 22px !important;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+
+            &:hover {
+                color: #ffffff !important;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
+
+            &::after {
+                vertical-align: middle;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .dropdown {
+                position: relative;
+
+                &:hover {
+                    .dropdown-menu {
+                        display: block;
+                        animation: fade-down 0.2s ease-out forwards;
+                    }
+                }
+            }
+        }
+
+        /* -------------------------------------------
+       Desktop Navbar Centering
+       ------------------------------------------- */
+        @media (min-width: 992px) {
+            /* Ensure the collapse container is the relative anchor */
+            .navbar-collapse {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+
+            /* Pin the navigation links perfectly to the center */
+            .navbar-nav {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0 !important;
+                display: flex;
+                align-items: center;
+            }
+
+            /* Ensure the VATSIM item stays pushed to the far right */
+            .vatsim-nav-item {
+                margin-left: auto !important;
+            }
+        }
+    }
+
     .navbar-brand {
         color: #0a1b2a !important;
         font-weight: 700;
@@ -92,6 +178,16 @@ nav.navbar {
         left: 50% !important;
         right: auto !important;
         transform: translateX(-50%);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: transparent;
+        }
 
         .dropdown-item {
             color: #0a1b2a !important;

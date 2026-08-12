@@ -4,8 +4,8 @@
 /vendor/
 
 # Ignore user-uploaded files and private files
-sites/*/files
-sites/*/private
+#sites/*/files
+#sites/*/private
 
 # Ignore multi-site test environment
 sites/simpletest

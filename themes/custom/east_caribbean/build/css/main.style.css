@@ -13011,6 +13011,7 @@ body.path-wiki .view-content {
   color: #0a1b2a;
   line-height: 1.2;
   margin: 0;
+  text-align: center;
 }
 .node--latest-news--full footer {
   display: block;
@@ -13033,6 +13034,7 @@ body.path-wiki .view-content {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: inline-block;
+  text-align: center;
 }
 .node--latest-news--full .field--name-field-news-image {
   margin: 2rem 0;
@@ -14703,6 +14705,95 @@ nav.navbar {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+nav.navbar .vatsim-nav-item {
+  margin-left: auto;
+}
+nav.navbar .vatsim-nav-item .vatsim-login-btn {
+  background-color: #0a1b2a !important;
+  color: #ffffff !important;
+  border-radius: 50px;
+  padding: 10px 28px !important;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    -webkit-transform 0.2s ease;
+}
+nav.navbar .vatsim-nav-item .vatsim-login-btn:hover {
+  color: #ffffff !important;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+nav.navbar .vatsim-nav-item .vatsim-user-btn {
+  background-color: #0a1b2a !important;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 22px !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    -webkit-transform 0.2s ease;
+  cursor: pointer;
+}
+nav.navbar .vatsim-nav-item .vatsim-user-btn:hover {
+  color: #ffffff !important;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+nav.navbar .vatsim-nav-item .vatsim-user-btn::after {
+  vertical-align: middle;
+}
+@media (min-width: 992px) {
+  nav.navbar .vatsim-nav-item .dropdown {
+    position: relative;
+  }
+  nav.navbar .vatsim-nav-item .dropdown:hover .dropdown-menu {
+    display: block;
+    -webkit-animation: fade-down 0.2s ease-out forwards;
+    animation: fade-down 0.2s ease-out forwards;
+  }
+}
+nav.navbar .vatsim-nav-item {
+}
+@media (min-width: 992px) {
+  nav.navbar .vatsim-nav-item {
+  }
+  nav.navbar .vatsim-nav-item .navbar-collapse {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  nav.navbar .vatsim-nav-item {
+  }
+  nav.navbar .vatsim-nav-item .navbar-nav {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+  }
+  nav.navbar .vatsim-nav-item {
+  }
+  nav.navbar .vatsim-nav-item .vatsim-nav-item {
+    margin-left: auto !important;
+  }
+}
 nav.navbar .navbar-brand {
   color: #0a1b2a !important;
   font-weight: 700;
@@ -14771,6 +14862,15 @@ nav.navbar .dropdown-menu {
   right: auto !important;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+nav.navbar .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: transparent;
 }
 nav.navbar .dropdown-menu .dropdown-item {
   color: #0a1b2a !important;
