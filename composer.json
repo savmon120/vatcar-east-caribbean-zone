@@ -30,7 +30,8 @@
         "drupal/pathauto": "^1.15",
         "drupal/radix": "^6.0",
         "drupal/svg_image": "^3.2",
-        "drush/drush": "^13.7"
+        "drush/drush": "^13.7",
+        "vatsim/oauth2-vatsim": "*"
     },
     "conflict": {
         "drupal/drupal": "*"

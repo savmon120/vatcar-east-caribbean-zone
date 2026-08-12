@@ -1,0 +1,19 @@
+<div class="vatsim-nav-item ms-auto d-flex align-items-center">
+    {% if logged_in %}
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center gap-2" type="button" id="vatsimUserDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle"></i>
+                <span>{{ user_name }}</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="vatsimUserDropdown">
+                <li><a class="dropdown-item" href="/user">My Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="/user/logout">Log out</a></li>
+            </ul>
+        </div>
+    {% else %}
+        <a href="/vatsim/login" class="btn btn-primary btn-join-apply">
+            Log in with VATSIM
+        </a>
+    {% endif %}
+</div>

@@ -1,0 +1,13 @@
+<?php
+
+function ecz_vatsim_auth_theme() {
+    return [
+        'vatsim_user_nav' => [
+            'variables' => [
+                'logged_in' => FALSE,
+                'user_name' => '',
+            ],
+            'template' => 'vatsim-user-nav',
+        ],
+    ];
+}

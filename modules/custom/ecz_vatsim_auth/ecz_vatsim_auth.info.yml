@@ -1,0 +1,7 @@
+name: 'ECZ VATSIM Auth'
+type: module
+description: 'Authenticates users via the official VATSIM Connect OAuth2 package.'
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - drupal:user
