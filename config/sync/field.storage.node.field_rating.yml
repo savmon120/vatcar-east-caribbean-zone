@@ -1,0 +1,51 @@
+uuid: e91541d5-87be-4d65-bebb-493a5b763983
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_rating
+field_name: field_rating
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: obs
+      label: OBS
+    -
+      value: s1
+      label: S1
+    -
+      value: s2
+      label: S2
+    -
+      value: s3
+      label: S3
+    -
+      value: c1
+      label: C1
+    -
+      value: c3
+      label: C3
+    -
+      value: i1
+      label: I1
+    -
+      value: i3
+      label: I3
+    -
+      value: sup
+      label: SUP
+    -
+      value: adm
+      label: ADM
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

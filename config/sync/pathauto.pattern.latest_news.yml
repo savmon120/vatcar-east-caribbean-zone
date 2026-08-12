@@ -1,0 +1,23 @@
+uuid: 8dd3baa4-dfc9-4694-aaf1-60e10c0af71c
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.latest_news
+  module:
+    - node
+id: latest_news
+label: 'Latest News'
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  529e02e4-ed0d-4079-a69d-079e301018a0:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      latest_news: latest_news
+selection_logic: and
+weight: -5
+relationships: {  }

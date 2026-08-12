@@ -1,0 +1,23 @@
+uuid: 97c18e9f-dae2-4381-af08-c51d0bc73902
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: JxLRcjxssFBZ7e7joNdeo6hwn3d_IuoqB2C4Ed8nb0A
+id: user.field_vatsim_cid
+field_name: field_vatsim_cid
+entity_type: user
+type: string
+settings:
+  max_length: 20
+  case_sensitive: false
+  is_ascii: true
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

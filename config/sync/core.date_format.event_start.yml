@@ -1,0 +1,8 @@
+uuid: e5f73d98-deb4-483e-b2db-a380a9113be1
+langcode: en-gb
+status: true
+dependencies: {  }
+id: event_start
+label: 'Event Start'
+locked: false
+pattern: 'D, d M Y Hi'

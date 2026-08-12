@@ -1,0 +1,24 @@
+uuid: 7b7f170a-03fb-44d7-9b98-b79dc27737e5
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - east_caribbean
+id: east_caribbean_pagetitle
+theme: east_caribbean
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/controllers/Join"

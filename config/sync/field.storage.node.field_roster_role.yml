@@ -1,0 +1,57 @@
+uuid: a7acec76-8cca-47ce-a9d0-8e3bd9c21d93
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_roster_role
+field_name: field_roster_role
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: controller
+      label: Controller
+    -
+      value: senior_controller
+      label: 'Senior Controller'
+    -
+      value: visitor
+      label: Visitor
+    -
+      value: mentor
+      label: Mentor
+    -
+      value: instructor
+      label: Instructor
+    -
+      value: inactive
+      label: Inactive
+    -
+      value: zone_manager
+      label: 'Zone Manager'
+    -
+      value: assistant_zone_manager
+      label: 'Assistant Zone Manager'
+    -
+      value: training_administrator
+      label: 'Training Administrator'
+    -
+      value: events_coordinator
+      label: 'Events Coordinator'
+    -
+      value: web_master
+      label: 'Web Master'
+    -
+      value: facility_engineer
+      label: 'Facility Engineer'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

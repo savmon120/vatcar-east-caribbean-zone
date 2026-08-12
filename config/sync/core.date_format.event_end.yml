@@ -1,0 +1,8 @@
+uuid: 15c292b0-3d11-4b14-9f1f-14c73ae829a5
+langcode: en-gb
+status: true
+dependencies: {  }
+id: event_end
+label: 'Event End'
+locked: false
+pattern: Hi

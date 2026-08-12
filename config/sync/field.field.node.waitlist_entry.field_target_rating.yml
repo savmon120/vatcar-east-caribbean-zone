@@ -1,0 +1,21 @@
+uuid: 2369c6a9-397f-47da-af7c-c0ea14313e70
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_rating
+    - node.type.waitlist_entry
+  module:
+    - options
+id: node.waitlist_entry.field_target_rating
+field_name: field_target_rating
+entity_type: node
+bundle: waitlist_entry
+label: 'Target Rating'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

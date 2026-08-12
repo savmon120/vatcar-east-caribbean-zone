@@ -4,10 +4,17 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_vatsim_cid
+    - field.field.user.user.field_vatsim_division
+    - field.field.user.user.field_vatsim_first_name
+    - field.field.user.user.field_vatsim_last_name
+    - field.field.user.user.field_vatsim_rating
+    - field.field.user.user.field_vatsim_region
+    - field.field.user.user.field_vatsim_subdivision
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
+    - svg_image
     - user
 _core:
   default_config_hash: SoVJ-aJLQ1cCbiXiYjNudOZRHG0CekKqXnPube8m-8w
@@ -28,5 +35,12 @@ content:
     weight: 0
     region: content
 hidden:
+  field_vatsim_cid: true
+  field_vatsim_division: true
+  field_vatsim_first_name: true
+  field_vatsim_last_name: true
+  field_vatsim_rating: true
+  field_vatsim_region: true
+  field_vatsim_subdivision: true
   langcode: true
   member_for: true

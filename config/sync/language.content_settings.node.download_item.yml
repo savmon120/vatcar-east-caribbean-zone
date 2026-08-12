@@ -1,0 +1,11 @@
+uuid: 9c094aa1-0891-4048-8f17-7df0f48121e0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.download_item
+id: node.download_item
+target_entity_type_id: node
+target_bundle: download_item
+default_langcode: site_default
+language_alterable: false

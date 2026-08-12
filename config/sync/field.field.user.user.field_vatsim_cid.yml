@@ -1,0 +1,22 @@
+uuid: 7e6bda71-3e60-4d1b-b96c-808c239d7488
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_cid
+  module:
+    - user
+_core:
+  default_config_hash: iPHpNE4oZ-Jq22oGRFSto3-Umi4UPTC3PxUTKJJ6M78
+id: user.user.field_vatsim_cid
+field_name: field_vatsim_cid
+entity_type: user
+bundle: user
+label: 'VATSIM CID'
+description: "The member's VATSIM network ID (CID)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_first_name
+  module:
+    - fir_sso
+    - user
+id: user.user.field_vatsim_first_name
+field_name: field_vatsim_first_name
+entity_type: user
+bundle: user
+label: 'First name'
+description: "The member's first name as returned by VATSIM Connect."
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings: {}
+field_type: string

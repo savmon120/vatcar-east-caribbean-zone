@@ -1,0 +1,66 @@
+uuid: 172cd104-1dd4-4429-8f64-cf1062e413b0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.waitlist_entry.field_cid
+    - field.field.node.waitlist_entry.field_date_of_request
+    - field.field.node.waitlist_entry.field_status
+    - field.field.node.waitlist_entry.field_target_rating
+    - field.field.node.waitlist_entry.field_type_of_training
+    - node.type.waitlist_entry
+  module:
+    - datetime
+    - options
+    - user
+id: node.waitlist_entry.default
+targetEntityType: node
+bundle: waitlist_entry
+mode: default
+content:
+  field_cid:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_date_of_request:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_target_rating:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_type_of_training:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

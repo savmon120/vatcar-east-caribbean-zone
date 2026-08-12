@@ -1,0 +1,18 @@
+services:
+  logger.channel.fir_sso:
+    parent: logger.channel_base
+    arguments: ['fir_sso']
+
+  fir_sso.vatsim_user_manager:
+    class: Drupal\fir_sso\Service\VatsimUserManager
+    arguments:
+      - '@entity_type.manager'
+      - '@logger.channel.fir_sso'
+
+  fir_sso.vatsim_login_subscriber:
+    class: Drupal\fir_sso\EventSubscriber\VatsimLoginSubscriber
+    arguments:
+      - '@fir_sso.vatsim_user_manager'
+      - '@logger.channel.fir_sso'
+    tags:
+      - { name: event_subscriber }

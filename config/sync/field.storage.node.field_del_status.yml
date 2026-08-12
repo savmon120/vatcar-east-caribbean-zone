@@ -1,0 +1,30 @@
+uuid: d88e14d9-f6bf-4b0e-9af0-0c8f8e2d1b81
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_del_status
+field_name: field_del_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: auth_authorized|auth
+      label: Authorized
+    -
+      value: solo_solo_endorsement|solo
+      label: 'Solo Endorsement'
+    -
+      value: tier2_tier_2|tier2
+      label: 'Tier 2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -21,11 +21,14 @@ settings:
       value: event
       label: Event
     -
-      value: notam
-      label: NOTAM
+      value: training
+      label: Training
     -
       value: operations
       label: Operations
+    -
+      value: notam
+      label: NOTAM
     -
       value: bulletin
       label: Bulletin

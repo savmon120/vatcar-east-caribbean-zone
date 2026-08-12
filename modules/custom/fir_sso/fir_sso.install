@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Install/uninstall hooks for the FIR SSO module.
+ */
+
+use Drupal\user\Entity\Role;
+
+/**
+ * Implements hook_install().
+ *
+ * Creates the 'controller' role if it does not already exist so that
+ * VatsimUserManager can assign it on first login without requiring the role
+ * to be pre-configured in the environment.
+ */
+function fir_sso_install(): void {
+  if (Role::load('controller') === NULL) {
+    Role::create([
+      'id' => 'controller',
+      'label' => 'Controller',
+      'weight' => 2,
+    ])->save();
+  }
+}

@@ -1,0 +1,21 @@
+uuid: dac98cfb-b154-44d8-bec9-15b8be84a206
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_of_request
+    - node.type.waitlist_entry
+  module:
+    - datetime
+id: node.waitlist_entry.field_date_of_request
+field_name: field_date_of_request
+entity_type: node
+bundle: waitlist_entry
+label: 'Date of Request'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

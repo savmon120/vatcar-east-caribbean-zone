@@ -1,0 +1,30 @@
+uuid: 3a801dbe-db8a-4f23-b2b1-77a76626473b
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_status
+field_name: field_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: waiting
+      label: Waiting
+    -
+      value: in_training
+      label: 'In Training'
+    -
+      value: completed
+      label: Completed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

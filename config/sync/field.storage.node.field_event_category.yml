@@ -19,7 +19,7 @@ settings:
       label: Exam
     -
       value: featured
-      label: Featured
+      label: Event
     -
       value: group_flight
       label: 'Group Flight'

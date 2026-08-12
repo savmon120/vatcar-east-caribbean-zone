@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * FIR SSO module hooks.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_user_register_form_alter().
+ *
+ * Blocks self-registration for anonymous visitors. All accounts must be
+ * created via VATSIM Connect SSO. Administrators can still create accounts
+ * at /admin/people/create because that path uses a different form ID
+ * (user_admin_settings / admin path) that is not altered here.
+ */
+function fir_sso_form_user_register_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
+  if (\Drupal::currentUser()->isAnonymous()) {
+    $form['#validate'][] = '_fir_sso_block_self_registration';
+  }
+}
+
+/**
+ * Validation callback: prevents anonymous self-registration.
+ */
+function _fir_sso_block_self_registration(array &$form, FormStateInterface $form_state): void {
+  $form_state->setError(
+    $form,
+    t('Direct account registration is not available. Please sign in via VATSIM Connect.')
+  );
+}

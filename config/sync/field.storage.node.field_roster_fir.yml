@@ -1,0 +1,27 @@
+uuid: 5cddc31b-c369-4a4a-84ef-075a0422b034
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_roster_fir
+field_name: field_roster_fir
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cur
+      label: CUR
+    -
+      value: pco
+      label: PCO
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

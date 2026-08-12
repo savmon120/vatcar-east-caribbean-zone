@@ -1,0 +1,11 @@
+uuid: 15d1e470-4150-4816-af19-177faecbd254
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.waitlist_entry
+id: node.waitlist_entry
+target_entity_type_id: node
+target_bundle: waitlist_entry
+default_langcode: site_default
+language_alterable: false

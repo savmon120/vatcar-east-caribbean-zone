@@ -1,0 +1,14 @@
+parameters:
+  level: 5
+  ignoreErrors:
+    - message: '#^Plugin definitions cannot be altered.$#'
+      count: 1
+      path: src/PluginManager/Oauth2GrantTypePluginManager.php
+    - message: '#^Expression on left side of \?\? is not nullable.$#'
+      count: 1
+      path: src/Form/Oauth2ClientForm.php
+    - message: '#^Expression on left side of \?\? is not nullable.$#'
+      count: 1
+      path: src/Plugin/Oauth2GrantType/Oauth2GrantTypePluginBase.php
+
+

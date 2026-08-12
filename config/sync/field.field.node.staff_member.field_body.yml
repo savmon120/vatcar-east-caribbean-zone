@@ -1,0 +1,22 @@
+uuid: a19278cc-5fc7-4416-8244-6c921c05825d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.staff_member
+  module:
+    - text
+id: node.staff_member.field_body
+field_name: field_body
+entity_type: node
+bundle: staff_member
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

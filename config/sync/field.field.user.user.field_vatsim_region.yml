@@ -1,0 +1,22 @@
+uuid: 886e0c18-ce0b-4d99-bd9b-81949fe2f949
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_region
+  module:
+    - user
+_core:
+  default_config_hash: tMh0tIjQvhW7vQ7E14PwgmpS-cgkkCiWAplFQL1YV4I
+id: user.user.field_vatsim_region
+field_name: field_vatsim_region
+entity_type: user
+bundle: user
+label: Region
+description: "The member's VATSIM region ID (e.g. EMEA, APAC)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

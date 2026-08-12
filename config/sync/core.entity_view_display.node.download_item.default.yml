@@ -1,0 +1,30 @@
+uuid: 5bb85195-76ec-4ea2-a19d-072bee4b1f30
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.download_item.field_file_attachment
+    - node.type.download_item
+  module:
+    - user
+id: node.download_item.default
+targetEntityType: node
+bundle: download_item
+mode: default
+content:
+  field_file_attachment:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

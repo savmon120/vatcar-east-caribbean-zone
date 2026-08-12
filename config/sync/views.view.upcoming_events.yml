@@ -29,7 +29,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Upcoming Events'
+      title: 'Homepage Upcoming Events Container'
       fields:
         title:
           id: title
@@ -211,7 +211,7 @@ display:
           click_sort_column: value
           type: datetime_custom
           settings:
-            timezone_override: ''
+            timezone_override: UTC
             date_format: 'M j'
           group_column: value
           group_columns: {  }
@@ -275,7 +275,7 @@ display:
           click_sort_column: value
           type: datetime_custom
           settings:
-            timezone_override: ''
+            timezone_override: UTC
             date_format: 'H:i'
           group_column: value
           group_columns: {  }
@@ -339,8 +339,8 @@ display:
           click_sort_column: value
           type: datetime_custom
           settings:
-            timezone_override: ''
-            date_format: 'H:i'
+            timezone_override: UTC
+            date_format: 'H:i\z'
           group_column: value
           group_columns: {  }
           group_rows: true

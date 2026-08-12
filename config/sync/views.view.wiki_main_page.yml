@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Main Page'
+      title: 'Documents Portal'
       fields:
         title:
           id: title
@@ -328,7 +328,11 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Documents Portal | ECZ'
+          tokenize: false
       path: wiki/Main_Page
     cache_metadata:
       max-age: -1

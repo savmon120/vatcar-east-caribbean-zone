@@ -1,0 +1,22 @@
+uuid: bcf99fd1-13d6-4921-ae83-bea3d4a5e1f6
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_rating
+  module:
+    - user
+_core:
+  default_config_hash: QrE-oovZCoBSrRtE4zb75fQe0xd-6ffkQOKDTboebtg
+id: user.user.field_vatsim_rating
+field_name: field_vatsim_rating
+entity_type: user
+bundle: user
+label: 'ATC rating'
+description: "The member's ATC rating short code (e.g. OBS, S1, C1)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

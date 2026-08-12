@@ -1,0 +1,23 @@
+uuid: 2c5987ca-2182-477a-b02b-088fcfae0c24
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: jPP8vqAYycxJ3JdDiVMwct6ozU21skrTc12FJJ3iQ_w
+id: user.field_vatsim_rating
+field_name: field_vatsim_rating
+entity_type: user
+type: string
+settings:
+  max_length: 10
+  case_sensitive: false
+  is_ascii: true
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

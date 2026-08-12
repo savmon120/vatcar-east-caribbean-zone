@@ -1,0 +1,19 @@
+uuid: 4769aac6-bfde-417b-a259-32742db46959
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_address
+    - node.type.staff_member
+id: node.staff_member.field_email_address
+field_name: field_email_address
+entity_type: node
+bundle: staff_member
+label: 'Email Address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

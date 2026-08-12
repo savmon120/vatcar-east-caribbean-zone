@@ -1,0 +1,37 @@
+uuid: f8f73a67-55ba-418f-be84-03964d71db87
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_common
+    - field.field.node.staff_member.field_body
+    - field.field.node.staff_member.field_email_address
+    - field.field.node.staff_member.field_media_image
+    - field.field.node.staff_member.field_role
+    - node.type.staff_member
+  module:
+    - user
+id: node.staff_member.card_common
+targetEntityType: node
+bundle: staff_member
+mode: card_common
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_email_address: true
+  field_role: true
+  langcode: true

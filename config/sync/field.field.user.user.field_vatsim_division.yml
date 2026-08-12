@@ -1,0 +1,22 @@
+uuid: 425ee046-aac4-444d-9854-d9b4a8008807
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_division
+  module:
+    - user
+_core:
+  default_config_hash: Yq4I3GJmCLc6hlrOKpaGhnFdW8Qjtymiu1ffksmIbIc
+id: user.user.field_vatsim_division
+field_name: field_vatsim_division
+entity_type: user
+bundle: user
+label: Division
+description: "The member's VATSIM division ID (e.g. EMEA, AMAS)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

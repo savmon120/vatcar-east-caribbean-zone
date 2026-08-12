@@ -11,7 +11,7 @@ dependencies:
 id: east_caribbean_ecznavbarmenu
 theme: east_caribbean
 region: navbar_right
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:ecz-navbar-menu'
 settings:

@@ -1,0 +1,23 @@
+uuid: a38302c1-c2de-4025-901d-e0007658dc6a
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cid
+    - node.type.controller
+id: node.controller.field_cid
+field_name: field_cid
+entity_type: node
+bundle: controller
+label: CID
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 800000
+  max: 9999999
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,30 @@
+uuid: df678d3c-7ce5-4cd8-bc40-1fddb4b7e0a0
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_of_training
+field_name: field_type_of_training
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: rating_update
+      label: 'Rating Update'
+    -
+      value: rating_upgrade
+      label: 'Rating Upgrade'
+    -
+      value: tier_2_endorsement
+      label: 'Tier 2 Endorsement'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

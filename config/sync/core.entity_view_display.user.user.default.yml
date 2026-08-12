@@ -3,10 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_vatsim_cid
+    - field.field.user.user.field_vatsim_division
+    - field.field.user.user.field_vatsim_first_name
+    - field.field.user.user.field_vatsim_last_name
+    - field.field.user.user.field_vatsim_rating
+    - field.field.user.user.field_vatsim_region
+    - field.field.user.user.field_vatsim_subdivision
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - image
+    - svg_image
     - user
 _core:
   default_config_hash: 9VeLVRRd4EH-HKc2TsLPLfupi3LfCOZkBOqBjjza1TA
@@ -15,8 +22,73 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  member_for:
+  field_vatsim_cid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_vatsim_division:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_vatsim_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_vatsim_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_vatsim_rating:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_vatsim_region:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
     weight: 5
+    region: content
+  field_vatsim_subdivision:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
     region: content
   user_picture:
     type: image
@@ -26,6 +98,10 @@ content:
       image_style: thumbnail
       image_loading:
         attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
     weight: 0
     region: content

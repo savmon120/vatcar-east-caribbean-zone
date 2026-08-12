@@ -1,0 +1,8 @@
+name: FIR SSO
+description: Integrates VATSIM SSO via the OAuth2 Client module.
+type: module
+package: Custom
+core_version_requirement: ^10.2 || ^11
+dependencies:
+  - drupal:user
+  - oauth2_client:oauth2_client

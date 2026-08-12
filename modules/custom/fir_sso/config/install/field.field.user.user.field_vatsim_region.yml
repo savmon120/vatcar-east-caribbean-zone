@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_region
+  module:
+    - fir_sso
+    - user
+id: user.user.field_vatsim_region
+field_name: field_vatsim_region
+entity_type: user
+bundle: user
+label: 'Region'
+description: "The member's VATSIM region ID (e.g. EMEA, APAC)."
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings: {}
+field_type: string

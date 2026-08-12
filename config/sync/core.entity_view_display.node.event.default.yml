@@ -3,58 +3,240 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_booking_link
     - field.field.node.event.field_event_category
     - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_description
     - field.field.node.event.field_event_end_date
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_link
     - field.field.node.event.field_location_fir
     - node.type.event
   module:
-    - datetime
-    - options
+    - layout_builder
+    - layout_discovery
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          77981e92-ff75-4361-98f5-bc7851ce6a36:
+            uuid: 77981e92-ff75-4361-98f5-bc7851ce6a36
+            region: first
+            configuration:
+              id: 'field_block:node:event:field_event_image'
+              label: 'Event Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                  svg_attributes:
+                    width: null
+                    height: null
+                  svg_render_as_image: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          151636ce-99e2-4d10-9639-f888a3c8b80e:
+            uuid: 151636ce-99e2-4d10-9639-f888a3c8b80e
+            region: second
+            configuration:
+              id: 'field_block:node:event:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                  link_rel: canonical
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          021e4d9b-c8bd-4f2e-90c1-b49d6da77b69:
+            uuid: 021e4d9b-c8bd-4f2e-90c1-b49d6da77b69
+            region: second
+            configuration:
+              id: 'field_block:node:event:field_event_date'
+              label: 'Event Start Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: event_start
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          5ce78ac2-fb8a-47a2-b859-3a1c05005cd1:
+            uuid: 5ce78ac2-fb8a-47a2-b859-3a1c05005cd1
+            region: second
+            configuration:
+              id: 'field_block:node:event:field_event_end_date'
+              label: 'Event End Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: event_end
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          3abf318c-c3be-4775-8e1c-8a00a0b98735:
+            uuid: 3abf318c-c3be-4775-8e1c-8a00a0b98735
+            region: second
+            configuration:
+              id: 'field_block:node:event:field_event_link'
+              label: 'Event Link'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          2d613f44-d443-47c4-b955-db12b1d767d7:
+            uuid: 2d613f44-d443-47c4-b955-db12b1d767d7
+            region: second
+            configuration:
+              id: 'field_block:node:event:field_event_category'
+              label: 'Event Category'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          6cd31634-216d-4c99-99a3-876e31aded5a:
+            uuid: 6cd31634-216d-4c99-99a3-876e31aded5a
+            region: second
+            configuration:
+              id: 'field_block:node:event:field_booking_link'
+              label: 'Booking Link'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          7710d907-3823-4323-aaae-7f1e6d0c67e6:
+            uuid: 7710d907-3823-4323-aaae-7f1e6d0c67e6
+            region: second
+            configuration:
+              id: 'field_block:node:event:field_location_fir'
+              label: Location/FIR
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                  link_rel: canonical
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          464bbb16-c24c-46b5-b529-74f1290b6a7a:
+            uuid: 464bbb16-c24c-46b5-b529-74f1290b6a7a
+            region: content
+            configuration:
+              id: 'field_block:node:event:field_event_description'
+              label: 'Event Description'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
-content:
-  field_event_category:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_event_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  field_event_end_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  field_location_fir:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-      link_rel: canonical
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+content: {  }
 hidden:
+  field_booking_link: true
+  field_event_category: true
+  field_event_date: true
+  field_event_description: true
+  field_event_end_date: true
+  field_event_image: true
+  field_event_link: true
+  field_location_fir: true
   langcode: true
+  links: true

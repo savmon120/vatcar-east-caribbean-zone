@@ -1,0 +1,23 @@
+uuid: 1745a642-59e7-4905-bb1a-dc832cfd06f0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cid
+    - node.type.waitlist_entry
+id: node.waitlist_entry.field_cid
+field_name: field_cid
+entity_type: node
+bundle: waitlist_entry
+label: CID
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 800000
+  max: 9999999
+  prefix: ''
+  suffix: ''
+field_type: integer

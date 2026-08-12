@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_subdivision
+  module:
+    - fir_sso
+    - user
+id: user.user.field_vatsim_subdivision
+field_name: field_vatsim_subdivision
+entity_type: user
+bundle: user
+label: 'Subdivision'
+description: "The member's VATSIM subdivision ID (e.g. GBR, FRA)."
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings: {}
+field_type: string

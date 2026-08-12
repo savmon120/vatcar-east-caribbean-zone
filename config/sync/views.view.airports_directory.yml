@@ -403,7 +403,11 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'Airport Briefings | ECZ'
+          tokenize: false
       path: pilots/Briefing
     cache_metadata:
       max-age: -1

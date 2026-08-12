@@ -1,0 +1,30 @@
+uuid: 372b5d24-28da-4d53-a136-576bb6a2f72f
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gnd_status
+field_name: field_gnd_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: auth_authorized|auth
+      label: Authorized
+    -
+      value: solo_solo_endorsement|solo
+      label: 'Solo Endorsement'
+    -
+      value: tier2_tier_2|tier2
+      label: 'Tier 2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

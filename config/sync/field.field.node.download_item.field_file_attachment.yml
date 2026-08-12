@@ -1,0 +1,29 @@
+uuid: 56e1b2f6-7a55-4014-9cc3-5faa7101bbfd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_attachment
+    - media.type.document
+    - node.type.download_item
+id: node.download_item.field_file_attachment
+field_name: field_file_attachment
+entity_type: node
+bundle: download_item
+label: 'File Attachment'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

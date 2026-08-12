@@ -1,0 +1,21 @@
+uuid: 6253ae77-919b-4757-a57f-4e8baebe2d83
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_training
+    - node.type.waitlist_entry
+  module:
+    - options
+id: node.waitlist_entry.field_type_of_training
+field_name: field_type_of_training
+entity_type: node
+bundle: waitlist_entry
+label: 'Type of Training'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

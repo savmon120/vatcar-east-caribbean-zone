@@ -1,0 +1,21 @@
+uuid: c000a1ea-98d6-457a-89cc-60be60a0d892
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roster_fir
+    - node.type.controller
+  module:
+    - options
+id: node.controller.field_roster_fir
+field_name: field_roster_fir
+entity_type: node
+bundle: controller
+label: 'Roster FIR'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

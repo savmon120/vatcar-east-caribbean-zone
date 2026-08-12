@@ -1,0 +1,20 @@
+uuid: 00ac9a75-1b5d-4bb8-a728-16605ff4e677
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - east_caribbean
+id: east_caribbean_tabs
+theme: east_caribbean
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

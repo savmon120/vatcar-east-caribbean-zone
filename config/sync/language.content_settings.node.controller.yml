@@ -1,0 +1,11 @@
+uuid: 962faf38-8531-424b-bb99-26b07c60864b
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.controller
+id: node.controller
+target_entity_type_id: node
+target_bundle: controller
+default_langcode: site_default
+language_alterable: false

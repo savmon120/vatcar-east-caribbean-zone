@@ -1,0 +1,22 @@
+uuid: cb8ff632-878f-436a-9fb9-91b333772480
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vatsim_subdivision
+  module:
+    - user
+_core:
+  default_config_hash: ET-d2BUQGXeshRVH6h-Vv81hynfg46QqQowZbfDxdSc
+id: user.user.field_vatsim_subdivision
+field_name: field_vatsim_subdivision
+entity_type: user
+bundle: user
+label: Subdivision
+description: "The member's VATSIM subdivision ID (e.g. GBR, FRA)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

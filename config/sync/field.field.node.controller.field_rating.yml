@@ -1,0 +1,21 @@
+uuid: 856440bd-1e11-490f-9e0b-359d234ca750
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.controller
+  module:
+    - options
+id: node.controller.field_rating
+field_name: field_rating
+entity_type: node
+bundle: controller
+label: Rating
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

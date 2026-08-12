@@ -1,0 +1,14 @@
+uuid: d8984fcd-93eb-4ba5-92b0-057a9f0ed500
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - fir_sso
+_core:
+  default_config_hash: clYiAArbL96dDJnbWor5CQXJGExu_4w1kbZAN7rEUM4
+id: vatsim
+label: 'VATSIM OAuth2 Client'
+description: 'OAuth2 login via VATSIM Connect (https://auth.vatsim.net).'
+oauth2_client_plugin_id: vatsim
+credential_provider: oauth2_client
+credential_storage_key: d8984fcd-93eb-4ba5-92b0-057a9f0ed500
