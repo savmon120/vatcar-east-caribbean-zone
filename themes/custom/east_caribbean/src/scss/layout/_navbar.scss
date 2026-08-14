@@ -21,6 +21,33 @@ nav.navbar {
     padding-top: 15px;
     padding-bottom: 15px;
 
+    @media (min-width: 992px) {
+        .navbar-collapse .ms-auto {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+
+        .block--east-caribbean-ecznavbarmenu {
+            position: static;
+            transform: none;
+            margin: 0 auto !important;
+        }
+
+        .block--east-caribbean-ecznavbarmenu ul.nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0;
+            gap: 15px;
+        }
+
+        .block--east-caribbean-vatsimusermenu {
+            margin-left: 0 !important;
+        }
+    }
+
     .vatsim-nav-item {
         margin-left: auto;
 
@@ -62,47 +89,6 @@ nav.navbar {
 
             &::after {
                 vertical-align: middle;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .dropdown {
-                position: relative;
-
-                &:hover {
-                    .dropdown-menu {
-                        display: block;
-                        animation: fade-down 0.2s ease-out forwards;
-                    }
-                }
-            }
-        }
-
-        /* -------------------------------------------
-       Desktop Navbar Centering
-       ------------------------------------------- */
-        @media (min-width: 992px) {
-            /* Ensure the collapse container is the relative anchor */
-            .navbar-collapse {
-                position: relative;
-                display: flex;
-                align-items: center;
-                width: 100%;
-            }
-
-            /* Pin the navigation links perfectly to the center */
-            .navbar-nav {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                margin: 0 !important;
-                display: flex;
-                align-items: center;
-            }
-
-            /* Ensure the VATSIM item stays pushed to the far right */
-            .vatsim-nav-item {
-                margin-left: auto !important;
             }
         }
     }
@@ -149,22 +135,6 @@ nav.navbar {
         display: block;
     }
 
-    a[href="/login"].nav-link {
-        background-color: #0a1b2a !important;
-        color: #ffffff !important;
-        border-radius: 50px;
-        padding: 10px 28px !important;
-        margin-left: 20px;
-        font-weight: 700;
-        opacity: 1;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-        &:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-    }
-
     .dropdown-menu {
         background-color: rgba(255, 255, 255, 0.9) !important;
         backdrop-filter: blur(10px);
@@ -206,7 +176,8 @@ nav.navbar {
     }
 
     @media (min-width: 992px) {
-        .nav-item.dropdown {
+        .nav-item.dropdown,
+        .vatsim-nav-item .dropdown {
             position: relative;
 
             &:hover {

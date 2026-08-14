@@ -14705,6 +14705,30 @@ nav.navbar {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+@media (min-width: 992px) {
+  nav.navbar .navbar-collapse .ms-auto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  nav.navbar .block--east-caribbean-ecznavbarmenu {
+    position: static;
+    -webkit-transform: none;
+    transform: none;
+    margin: 0 auto !important;
+  }
+  nav.navbar .block--east-caribbean-ecznavbarmenu ul.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    gap: 15px;
+  }
+  nav.navbar .block--east-caribbean-vatsimusermenu {
+    margin-left: 0 !important;
+  }
+}
 nav.navbar .vatsim-nav-item {
   margin-left: auto;
 }
@@ -14756,44 +14780,6 @@ nav.navbar .vatsim-nav-item .vatsim-user-btn:hover {
 nav.navbar .vatsim-nav-item .vatsim-user-btn::after {
   vertical-align: middle;
 }
-@media (min-width: 992px) {
-  nav.navbar .vatsim-nav-item .dropdown {
-    position: relative;
-  }
-  nav.navbar .vatsim-nav-item .dropdown:hover .dropdown-menu {
-    display: block;
-    -webkit-animation: fade-down 0.2s ease-out forwards;
-    animation: fade-down 0.2s ease-out forwards;
-  }
-}
-nav.navbar .vatsim-nav-item {
-}
-@media (min-width: 992px) {
-  nav.navbar .vatsim-nav-item {
-  }
-  nav.navbar .vatsim-nav-item .navbar-collapse {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  nav.navbar .vatsim-nav-item {
-  }
-  nav.navbar .vatsim-nav-item .navbar-nav {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin: 0 !important;
-    display: flex;
-    align-items: center;
-  }
-  nav.navbar .vatsim-nav-item {
-  }
-  nav.navbar .vatsim-nav-item .vatsim-nav-item {
-    margin-left: auto !important;
-  }
-}
 nav.navbar .navbar-brand {
   color: #0a1b2a !important;
   font-weight: 700;
@@ -14828,26 +14814,6 @@ nav.navbar .nav-link.is-active {
 nav.navbar span.nav-link {
   cursor: pointer;
   display: block;
-}
-nav.navbar a[href="/login"].nav-link {
-  background-color: #0a1b2a !important;
-  color: #ffffff !important;
-  border-radius: 50px;
-  padding: 10px 28px !important;
-  margin-left: 20px;
-  font-weight: 700;
-  opacity: 1;
-  transition: box-shadow 0.2s ease, -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    -webkit-transform 0.2s ease;
-}
-nav.navbar a[href="/login"].nav-link:hover {
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 nav.navbar .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.9) !important;
@@ -14888,10 +14854,12 @@ nav.navbar .dropdown-menu .dropdown-item.is-active {
   color: #ffffff !important;
 }
 @media (min-width: 992px) {
-  nav.navbar .nav-item.dropdown {
+  nav.navbar .nav-item.dropdown,
+  nav.navbar .vatsim-nav-item .dropdown {
     position: relative;
   }
-  nav.navbar .nav-item.dropdown:hover .dropdown-menu {
+  nav.navbar .nav-item.dropdown:hover .dropdown-menu,
+  nav.navbar .vatsim-nav-item .dropdown:hover .dropdown-menu {
     display: block;
     -webkit-animation: fade-down 0.2s ease-out forwards;
     animation: fade-down 0.2s ease-out forwards;

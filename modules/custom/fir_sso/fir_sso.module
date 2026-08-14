@@ -30,3 +30,22 @@ function _fir_sso_block_self_registration(array &$form, FormStateInterface $form
     t('Direct account registration is not available. Please sign in via VATSIM Connect.')
   );
 }
+
+
+/**
+ * Implements hook_theme().
+ */
+function fir_sso_theme(): array
+{
+    return [
+        'fir_sso_user_menu' => [
+            'variables' => [
+                'logged_in' => FALSE,
+                'user_name' => '',
+                'cid' => '',
+                'rating' => '',
+            ],
+            'template' => 'fir-sso-user-menu',
+        ],
+    ];
+}
